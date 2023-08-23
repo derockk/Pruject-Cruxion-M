@@ -1,0 +1,360 @@
+local gui = Instance.new("ScreenGui") 
+ gui.Parent = game.Players.LocalPlayer.PlayerGui 
+  
+ local notif = Instance.new("ScreenGui")  
+ notif.Parent = game.Players.LocalPlayer.PlayerGui 
+  
+ local testNotif = Instance.new("TextLabel")  
+ testNotif.Text = "Script Activated."  
+ testNotif.Size = UDim2.new(0, 100, 0, 30) 
+ testNotif.Position = UDim2.new(0, 250, 0, -31) 
+ testNotif.BackgroundColor3 = Color3.new(0, 0, 0) 
+ testNotif.TextColor3 = Color3.new(1, 1, 1) 
+ testNotif.BackgroundTransparency = 0.5 
+ testNotif.Visible = false  
+ testNotif.Parent = notif 
+  
+ local gui = Instance.new("ScreenGui") 
+ gui.Name = "NotificationGui" 
+ gui.Parent = game.Players.LocalPlayer.PlayerGui 
+  
+ local runButton = Instance.new("TextButton") 
+ runButton.Text = "Run" 
+ runButton.Size = UDim2.new(0, 35, 0, 35) 
+ runButton.Position = UDim2.new(0, 600, 0, 40)  
+ runButton.BackgroundColor3 = Color3.new(0, 0, 0) 
+ runButton.TextColor3 = Color3.new(1, 1, 1) 
+ runButton.BackgroundTransparency = 0.5 
+ runButton.Parent = gui 
+  
+ local stopButton = Instance.new("TextButton") 
+ stopButton.Text = "Walk" 
+ stopButton.Size = UDim2.new(0, 35, 0, 35) 
+ stopButton.Position = UDim2.new(0, 600, 0, 80) 
+ stopButton.BackgroundColor3 = Color3.new(0, 0, 0) 
+ stopButton.TextColor3 = Color3.new(1, 1, 1) 
+ stopButton.BackgroundTransparency = 0.5 
+ stopButton.Parent = gui 
+  
+ local addButton = Instance.new("TextButton") 
+ addButton.Text = "P/C:M" 
+ addButton.Size = UDim2.new(0, 100, 0, 30) 
+ addButton.Position = UDim2.new(0, 105, 0, -31) 
+ addButton.BackgroundColor3 = Color3.new(0, 0, 0) 
+ addButton.TextColor3 = Color3.new(1, 1, 1) 
+ addButton.BackgroundTransparency = 0.5 
+ addButton.Parent = gui 
+  
+ local window = Instance.new("Frame") 
+ window.Size = UDim2.new(0, 600, 0, 250) 
+ window.Position = UDim2.new(0, 20, 0, 25) 
+ window.BackgroundColor3 = Color3.new(0, 0, 0) 
+ window.BackgroundTransparency = 0.5 
+ window.Visible = false 
+ window.Parent = gui 
+  
+ local textLabel = Instance.new("TextLabel") 
+ textLabel.Text = "Thank you for using Pruject/Cruxion:M!" 
+ textLabel.Size = UDim2.new(1, 0, 1, 0) 
+ textLabel.BackgroundTransparency = 1 
+ textLabel.TextColor3 = Color3.new(1, 1, 1) 
+ textLabel.Font = Enum.Font.SourceSansBold 
+ textLabel.FontSize = Enum.FontSize.Size24 
+ textLabel.Position = UDim2.new(0, -75, 0, -110) 
+ textLabel.Parent = window 
+  
+ local textLabel = Instance.new("TextLabel") 
+ textLabel.Text = "⚠ There may be some bugs in the script but, you'll get a hang of it" 
+ textLabel.Size = UDim2.new(1, 0, 1, 0) 
+ textLabel.BackgroundTransparency = 1 
+ textLabel.TextColor3 = Color3.new(1, 1, 1) 
+ textLabel.Font = Enum.Font.SourceSansBold 
+ textLabel.FontSize = Enum.FontSize.Size24 
+ textLabel.Position =UDim2.new(0, 0, 0, 0) 
+ textLabel.Parent = window 
+  
+ local textLabel = Instance.new("TextLabel") 
+ textLabel.Text = "Made by Discord AI Chatbot Clyde, Rok, and other Script Creators" 
+ textLabel.Size = UDim2.new(1, 0, 1, 0) 
+ textLabel.BackgroundTransparency = 1 
+ textLabel.TextColor3 = Color3.new(215, 30, 30) 
+ textLabel.Font = Enum.Font.SourceSansBold 
+ textLabel.FontSize = Enum.FontSize.Size10 
+ textLabel.Position = UDim2.new(0, -120, 0, 120) 
+ textLabel.Parent = window 
+  
+ local textLabel = Instance.new("TextLabel") 
+ textLabel.Text = "Script is still in development." 
+ textLabel.Size = UDim2.new(1, 0, 1, 0) 
+ textLabel.BackgroundTransparency = 1 
+ textLabel.TextColor3 = Color3.new(215, 30, 30) 
+ textLabel.Font = Enum.Font.SourceSansBold 
+ textLabel.FontSize = Enum.FontSize.Size10 
+ textLabel.Position = UDim2.new(0, -120, 0, 130) 
+ textLabel.Parent = window 
+  
+ local closeButton = Instance.new("TextButton") 
+ closeButton.Text = "Close" 
+ closeButton.Size = UDim2.new(0, 100, 0, 30) 
+ closeButton.Position = UDim2.new(0, 105, 0, -31) 
+ closeButton.BackgroundColor3 = Color3.new(0, 0, 0) 
+ closeButton.TextColor3 = Color3.new(1, 1, 1) 
+ closeButton.BackgroundTransparency = 0.5 
+ closeButton.Visible = false 
+ closeButton.Parent = gui 
+  
+ local function addWindow() 
+     addButton.Visible = false 
+     window.Visible = true 
+     closeButton.Visible = true 
+ end 
+  
+ local function closeWindow() 
+     addButton.Visible = true 
+     window.Visible = false 
+     closeButton.Visible = false 
+ end 
+  
+ addButton.MouseButton1Click:Connect(addWindow) 
+ closeButton.MouseButton1Click:Connect(closeWindow) 
+  
+ local runSpeed = 35 
+ local stopSpeed = 16 
+  
+ local function run() 
+     if game.Players.LocalPlayer.Character.Humanoid.FloorMaterial ~= Enum.Material.Air then 
+         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = runSpeed 
+     end 
+ end 
+  
+ local function stopRunning() 
+     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = stopSpeed 
+ end 
+  
+ runButton.MouseButton1Click:Connect(run) 
+ stopButton.MouseButton1Click:Connect(stopRunning) 
+  
+ local gui = Instance.new("ScreenGui") 
+ gui.Name = "MenuGui" 
+ gui.Parent = game.Players.LocalPlayer.PlayerGui 
+  
+ local menuButton = Instance.new("TextButton") 
+ menuButton.Text = "M" 
+ menuButton.Size = UDim2.new(0, 32, 0, 32) 
+ menuButton.Position = UDim2.new(0, 15, 0, 10) 
+ menuButton.BackgroundColor3 = Color3.new(0, 0, 0) 
+ menuButton.TextColor3 = Color3.new(1, 1, 1) 
+ menuButton.Font = Enum.Font.SourceSansBold 
+ menuButton.FontSize = Enum.FontSize.Size24 
+ menuButton.BackgroundTransparency = 0.5 
+ menuButton.Parent = gui 
+  
+ local menuOptions = Instance.new("Frame") 
+ menuOptions.Size = UDim2.new(0, 500, 0, 250) 
+ menuOptions.Position = UDim2.new(0, 75, 0, 30) 
+ menuOptions.BackgroundColor3 = Color3.new(0, 0, 0) 
+ menuOptions.Visible = false 
+ menuOptions.BackgroundTransparency = 0.5 
+ menuOptions.Parent = gui 
+  
+ local menuText = Instance.new("TextLabel") 
+ menuText.Text = "Script Menu"  
+ menuText.Size = UDim2.new(0, 480, 0, 25) 
+ menuText.Position = UDim2.new(0, 10, 0, 10) 
+ menuText.BackgroundColor3 = Color3.new(0, 0, 0) 
+ menuText.Font = Enum.Font.SourceSansBold 
+ menuText.FontSize = Enum.FontSize.Size24 
+ menuText.TextColor3 = Color3.new(1, 1, 1) 
+ menuText.BackgroundTransparency = 0.25 
+ menuText.Parent = menuOptions 
+  
+ local optionButton = Instance.new("TextButton") 
+ optionButton.Text = "Mobile Keyboard" 
+ optionButton.Size = UDim2.new(0, 200, 0, 25) 
+ optionButton.Position = UDim2.new(0, 10, 0, 40) 
+ optionButton.BackgroundColor3 = Color3.new(0, 0, 0) 
+ optionButton.TextColor3 = Color3.new(1, 1, 1) 
+ optionButton.Font = Enum.Font.SourceSansBold 
+ optionButton.FontSize = Enum.FontSize.Size24 
+ optionButton.BackgroundTransparency = 0.25 
+ optionButton.Parent = menuOptions 
+  
+ local function enableScript() 
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))() 
+  
+ testNotif.Visible = true 
+ wait(3) 
+ testNotif.Visible = false 
+ end 
+  
+ local optionButton2 = Instance.new("TextButton") 
+ optionButton2.Text = "Infinite Yield" 
+ optionButton2.Size = UDim2.new(0, 200, 0, 25) 
+ optionButton2.Position = UDim2.new(0, 10, 0, 100) 
+ optionButton2.BackgroundColor3 = Color3.new(0, 0, 0) 
+ optionButton2.TextColor3 = Color3.new(1, 1, 1) 
+ optionButton2.Font = Enum.Font.SourceSansBold 
+ optionButton2.FontSize = Enum.FontSize.Size24 
+ optionButton2.BackgroundTransparency = 0.25 
+ optionButton2.Parent = menuOptions 
+  
+ local function enableScript2() 
+     loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Infinite-Yield-6163"))() 
+  
+ testNotif.Visible = true 
+ wait(3) 
+ testNotif.Visible = false 
+ end 
+  
+ local optionButton3 = Instance.new("TextButton") 
+ optionButton3.Text = "Mobile Fly GUI" 
+ optionButton3.Size = UDim2.new(0, 200, 0, 25) 
+ optionButton3.Position = UDim2.new(0, 10, 0, 130) 
+ optionButton3.BackgroundColor3 = Color3.new(0, 0, 0) 
+ optionButton3.TextColor3 = Color3.new(1, 1, 1) 
+ optionButton3.Font = Enum.Font.SourceSansBold 
+ optionButton3.FontSize = Enum.FontSize.Size24 
+ optionButton3.BackgroundTransparency = 0.25 
+ optionButton3.Parent = menuOptions 
+  
+ local function enableScript3() 
+   loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")() 
+  
+ testNotif.Visible = true 
+ wait(3) 
+ testNotif.Visible = false 
+ end 
+  
+ local optionButton4 = Instance.new("TextButton") 
+ optionButton4.Text = "Nameless Admin" 
+ optionButton4.Size = UDim2.new(0, 200, 0, 25) 
+ optionButton4.Position = UDim2.new(0, 10, 0, 70) 
+ optionButton4.BackgroundColor3 = Color3.new(0, 0, 0) 
+ optionButton4.TextColor3 = Color3.new(1, 1, 1) 
+ optionButton4.Font = Enum.Font.SourceSansBold 
+ optionButton4.FontSize = Enum.FontSize.Size24 
+ optionButton4.BackgroundTransparency = 0.25 
+ optionButton4.Parent = menuOptions 
+  
+ local function enableScript4() 
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))(); 
+  
+ testNotif.Visible = true 
+ wait(3) 
+ testNotif.Visible = false 
+ end 
+  
+ local optionButton5 = Instance.new("TextButton") 
+ optionButton5.Text = "H4x Admin" 
+ optionButton5.Size = UDim2.new(0, 200, 0, 25) 
+ optionButton5.Position = UDim2.new(0, 10, 0, 160) 
+ optionButton5.BackgroundColor3 = Color3.new(0, 0, 0) 
+ optionButton5.TextColor3 = Color3.new(1, 1, 1) 
+ optionButton5.Font = Enum.Font.SourceSansBold 
+ optionButton5.FontSize = Enum.FontSize.Size24 
+ optionButton5.BackgroundTransparency = 0.25 
+ optionButton5.Parent = menuOptions 
+  
+ local function enableScript5() 
+     getgenv().FavoriteColor = Color3.fromRGB(0, 0, 255) --(Red, Green, Blue) from 0 to 255
+getgenv().Slotguns = "1" --Change slots 1 to 6 (Maybe bug for guard)
+
+--[[
+slot mode 1 = m9,m4a1,shotgun,ak
+slot mode 2 = m9,ak,shotgun,m4a1
+slot mode 3 = m4a1,shotgun,ak,m9
+slot mode 4 = ak,shotgun,m4a1,m9
+slot mode 5 = m4a1,ak,shotgun,m9
+slot mode 6 = m4a1,ak,shotgun,m9
+]]--
+
+--[[Function Adds:
+st / slot [1 to 6] - Change your Slots (Maybe bug for guard)
+aoped / autoopendoors [true,yes,y,on] - open doors in loop (to disable [false,no,n,off]).
+]]--
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yTevezz1/SCRIPTADMINPRISONLIFE/main/H4X-ADMIN-V2"))() 
+  
+ testNotif.Visible = true 
+ wait(3) 
+ testNotif.Visible = false 
+ end 
+  
+ local optionButton6 = Instance.new("TextButton") 
+ optionButton6.Text = "Ghost Hub" 
+ optionButton6.Size = UDim2.new(0, 200, 0, 25) 
+ optionButton6.Position = UDim2.new(0, 10, 0, 190) 
+ optionButton6.BackgroundColor3 = Color3.new(0, 0, 0) 
+ optionButton6.TextColor3 = Color3.new(1, 1, 1) 
+ optionButton6.Font = Enum.Font.SourceSansBold 
+ optionButton6.FontSize = Enum.FontSize.Size24 
+ optionButton6.BackgroundTransparency = 0.25 
+ optionButton6.Parent = menuOptions 
+  
+ local function enableScript6() 
+     loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))() 
+  
+ testNotif.Visible = true 
+ wait(3) 
+ testNotif.Visible = false 
+ end 
+  
+ local optionButton7 = Instance.new("TextButton")  
+  optionButton7.Text = "Tp Tool"  
+  optionButton7.Size = UDim2.new(0, 200, 0, 25)  
+  optionButton7.Position = UDim2.new(0, 10, 0, 220)  
+  optionButton7.BackgroundColor3 = Color3.new(0, 0, 0)  
+  optionButton7.TextColor3 = Color3.new(1, 1, 1)  
+  optionButton7.Font = Enum.Font.SourceSansBold  
+  optionButton7.FontSize = Enum.FontSize.Size24  
+  optionButton7.BackgroundTransparency = 0.25  
+  optionButton7.Parent = menuOptions  
+  
+  local function enableScript7()  
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/derockk/Tp-Tool/main/Tp%20Tool"))() 
+  
+  testNotif.Visible = true  
+  wait(3)  
+  testNotif.Visible = false  
+  end 
+  
+ local optionButton8 = Instance.new("TextButton")  
+  optionButton8.Text = "Shiftlock (buggy)"  
+  optionButton8.Size = UDim2.new(0, 200, 0, 25)  
+  optionButton8.Position = UDim2.new(0, 290, 0, 40)  
+  optionButton8.BackgroundColor3 = Color3.new(0, 0, 0)  
+  optionButton8.TextColor3 = Color3.new(1, 1, 1)  
+  optionButton8.Font = Enum.Font.SourceSansBold  
+  optionButton8.FontSize = Enum.FontSize.Size24  
+  optionButton8.BackgroundTransparency = 0.25  
+  optionButton8.Parent = menuOptions  
+  
+  local function enableScript8()  
+      loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Universal-Shift-Lock-6655"))() 
+  
+  testNotif.Visible = true  
+  wait(3)  
+  testNotif.Visible = false  
+  end 
+  
+ optionButton.MouseButton1Click:Connect(enableScript) 
+  
+ optionButton2.MouseButton1Click:Connect(enableScript2)  
+  
+ optionButton3.MouseButton1Click:Connect(enableScript3)  
+  
+ optionButton4.MouseButton1Click:Connect(enableScript4)  
+  
+ optionButton5.MouseButton1Click:Connect(enableScript5)  
+  
+ optionButton6.MouseButton1Click:Connect(enableScript6)  
+  
+ optionButton7.MouseButton1Click:Connect(enableScript7) 
+  
+ optionButton8.MouseButton1Click:Connect(enableScript8)  
+  
+ local function toggleMenu() 
+     menuOptions.Visible = not menuOptions.Visible 
+ end 
+  
+ menuButton.MouseButton1Click:Connect(toggleMenu) 
