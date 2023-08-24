@@ -421,7 +421,7 @@ local soundId = "rbxassetid://1053296915"
   end 
   
 local optionButton9 = Instance.new("TextButton")  
-  optionButton9.Text = "Comet"  
+  optionButton9.Text = "[Patched]"  
   optionButton9.Size = UDim2.new(0, 200, 0, 25)  
   optionButton9.Position = UDim2.new(0, 290, 0, 70)  
   optionButton9.BackgroundColor3 = Color3.new(0, 0, 0)  
