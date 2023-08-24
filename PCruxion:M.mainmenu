@@ -5,7 +5,7 @@ local windowFrame = Instance.new("Frame")
 windowFrame.Size = UDim2.new(0, 500, 0, 250)
 windowFrame.Position = UDim2.new(0, 75, 0, 50)
 windowFrame.BackgroundColor3 = Color3.new(0, 0, 0)
-windowFrame.BackgroundTransparency = 0.25
+windowFrame.BackgroundTransparency = 0.50
 windowFrame.Parent = gui
 
 local intext1 = Instance.new("TextLabel")
