@@ -489,13 +489,4 @@ optionButton9.MouseButton1Click:Connect(enableScript9)
 
 optionButton10.MouseButton1Click:Connect(enableScript10) 
   
- local function toggleMenu() 
- local soundId = "rbxassetid://6895079853"
-    local sound = Instance.new("Sound")
-    sound.SoundId = soundId
-    sound.Parent = workspace
-    sound:Play()
-     menuOptions.Visible = not menuOptions.Visible 
- end 
-  
- menuButton.MouseButton1Click:Connect(toggleMenu) 
+ 
