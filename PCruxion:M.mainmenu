@@ -37,7 +37,7 @@ enterButton.BackgroundColor3 = Color3.new(139/255, 22/255, 22/255)
 enterButton.TextColor3 = Color3.new(1, 1, 1)
 enterButton.Font = Enum.Font.SourceSansBold 
 enterButton.FontSize = Enum.FontSize.Size24 
-enterButton.BackgroundTransparency = 0.25
+enterButton.BackgroundTransparency = 0.75
 enterButton.Parent = windowFrame
 
 local function activateScript() loadstring(game:HttpGet("https://raw.githubusercontent.com/derockk/Pruject-Cruxion-M/main/PCruxionScript.mobile"))()
