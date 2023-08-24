@@ -192,7 +192,7 @@ game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = stopSpeed
   menuButton.TextColor3 = Color3.new(1, 1, 1)  
   menuButton.Font = Enum.Font.SourceSansBold  
   menuButton.FontSize = Enum.FontSize.Size24  
-  menuButton.BackgroundTransparency = 0.75  
+  menuButton.BackgroundTransparency = 0.50  
   menuButton.Parent = gui  
   
   local menuOptions = Instance.new("Frame")  
@@ -200,7 +200,7 @@ game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = stopSpeed
   menuOptions.Position = UDim2.new(0, 70, 0, 30)  
   menuOptions.BackgroundColor3 = Color3.new(0, 0, 0)  
   menuOptions.Visible = false  
-  menuOptions.BackgroundTransparency = 0.75  
+  menuOptions.BackgroundTransparency = 0.50  
   menuOptions.Parent = gui
 
 local menuOptions2 = Instance.new("Frame")  
@@ -208,7 +208,7 @@ local menuOptions2 = Instance.new("Frame")
   menuOptions2.Position = UDim2.new(0, 70, 0, 30)  
   menuOptions2.BackgroundColor3 = Color3.new(0, 0, 0)  
   menuOptions2.Visible = false  
-  menuOptions2.BackgroundTransparency = 0.75  
+  menuOptions2.BackgroundTransparency = 0.50 
   menuOptions2.Parent = gui
 
 local menudesc = Instance.new("Frame")  
@@ -227,13 +227,13 @@ local menuButton2 = Instance.new("TextButton")
   menuButton2.TextColor3 = Color3.new(1, 1, 1)  
   menuButton2.Font = Enum.Font.SourceSansBold  
   menuButton2.FontSize = Enum.FontSize.Size24  
-  menuButton2.BackgroundTransparency = 0.75  
+  menuButton2.BackgroundTransparency = 0.50
   menuButton2.Parent = menuOptions 
   
 local nextpage = Instance.new("TextButton")  
   nextpage.Text = ">"  
   nextpage.Size = UDim2.new(0, 32, 0, 32)  
-  nextpage.Position = UDim2.new(0, 195, 0, 255)  
+  nextpage.Position = UDim2.new(0, 180, 0, 255)  
   nextpage.BackgroundColor3 = Color3.new(0, 0, 0)  
   nextpage.TextColor3 = Color3.new(1, 1, 1)  
   nextpage.Font = Enum.Font.SourceSansBold  
@@ -487,7 +487,7 @@ local soundId = "rbxassetid://1053296915"
   
  local optionButton8 = Instance.new("TextButton")  
   optionButton8.Text = "Shiftlock (buggy)"  
-  optionButton8.Size = UDim2.new(0, 200, 0, 25)  
+  optionButton8.Size = UDim2.new(0, 180, 0, 20)  
   optionButton8.Position = UDim2.new(0, 10, 0, 230)  
   optionButton8.BackgroundColor3 = Color3.new(139/255, 22/255, 22/255)
   optionButton8.TextColor3 = Color3.new(1, 1, 1)  
