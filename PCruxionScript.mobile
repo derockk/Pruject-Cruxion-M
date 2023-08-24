@@ -170,21 +170,8 @@ game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = stopSpeed
  runButton.MouseButton1Click:Connect(run) 
  stopButton.MouseButton1Click:Connect(stopRunning) 
   
- local gui = Instance.new("ScreenGui") 
- gui.Name = "MenuGui" 
- gui.Parent = game.Players.LocalPlayer.PlayerGui 
   
- local menuButton = Instance.new("TextButton") 
- menuButton.Text = "M" 
- menuButton.Size = UDim2.new(0, 32, 0, 32) 
- menuButton.Position = UDim2.new(0, 15, 0, 10) 
- menuButton.BackgroundColor3 = Color3.new(0, 0, 0) 
- menuButton.TextColor3 = Color3.new(1, 1, 1) 
- menuButton.Font = Enum.Font.SourceSansBold 
- menuButton.FontSize = Enum.FontSize.Size24 
- menuButton.BackgroundTransparency = 0.5 
- menuButton.Parent = gui 
-  
+
  local menuOptions = Instance.new("Frame") 
  menuOptions.Size = UDim2.new(0, 500, 0, 250) 
  menuOptions.Position = UDim2.new(0, 75, 0, 30) 
