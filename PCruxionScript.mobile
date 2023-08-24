@@ -10,7 +10,7 @@ local gui = Instance.new("ScreenGui")
  testNotif.Position = UDim2.new(0, 250, 0, -31) 
  testNotif.BackgroundColor3 = Color3.new(0, 0, 0) 
  testNotif.TextColor3 = Color3.new(1, 1, 1) 
- testNotif.BackgroundTransparency = 0.75
+ testNotif.BackgroundTransparency = 0.50
  testNotif.Visible = false  
  testNotif.Parent = notif 
   
