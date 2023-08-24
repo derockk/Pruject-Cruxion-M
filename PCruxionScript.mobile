@@ -106,13 +106,27 @@ stopButton.Visible = false
  closeButton.Parent = gui 
   
  local function addWindow() 
+
+
+local soundId = "rbxassetid://6895079853"
+    local sound = Instance.new("Sound")
+    sound.SoundId = soundId
+    sound.Parent = workspace
+    sound:Play()
      addButton.Visible = false 
      window.Visible = true 
      closeButton.Visible = true 
  end 
   
  local function closeWindow() 
-     addButton.Visible = true 
+
+
+local soundId = "rbxassetid://6895079853"
+    local sound = Instance.new("Sound")
+    sound.SoundId = soundId
+    sound.Parent = workspace
+    sound:Play() 
+    addButton.Visible = true 
      window.Visible = false 
      closeButton.Visible = false 
  end 
@@ -124,6 +138,13 @@ stopButton.Visible = false
  local stopSpeed = 16 
   
  local function run() 
+
+
+local soundId = "rbxassetid://6895079853"
+    local sound = Instance.new("Sound")
+    sound.SoundId = soundId
+    sound.Parent = workspace
+    sound:Play()
 runButton.Visible = false
 stopButton.Visible = true
 
@@ -133,6 +154,13 @@ stopButton.Visible = true
  end 
 
  local function stopRunning() 
+
+
+local soundId = "rbxassetid://6895079853"
+    local sound = Instance.new("Sound")
+    sound.SoundId = soundId
+    sound.Parent = workspace
+    sound:Play()
     runButton.Visible = true
 stopButton.Visible = false
 
