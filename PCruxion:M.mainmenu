@@ -5,7 +5,7 @@ local windowFrame = Instance.new("Frame")
 windowFrame.Size = UDim2.new(0, 500, 0, 250)
 windowFrame.Position = UDim2.new(0, 75, 0, 50)
 windowFrame.BackgroundColor3 = Color3.new(0, 0, 0)
-windowFrame.BackgroundTransparency = 0.75
+windowFrame.BackgroundTransparency = 0.25
 windowFrame.Parent = gui
 
 local intext1 = Instance.new("TextLabel")
@@ -33,7 +33,7 @@ local enterButton = Instance.new("TextButton")
 enterButton.Text = "Enter" 
 enterButton.Size = UDim2.new(0, 480, 0, 50)
 enterButton.Position = UDim2.new(0, 10, 0, 190)
-enterButton.BackgroundColor3 = Color3.new(0, 0, 0)
+enterButton.BackgroundColor3 = Color3.new(139, 22, 22)
 enterButton.TextColor3 = Color3.new(1, 1, 1)
 enterButton.Font = Enum.Font.SourceSansBold 
 enterButton.FontSize = Enum.FontSize.Size24 
