@@ -191,7 +191,7 @@ game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = stopSpeed
   menuOptions.BackgroundColor3 = Color3.new(0, 0, 0)  
   menuOptions.Visible = false  
   menuOptions.BackgroundTransparency = 0.75  
-  menuOptions.Parent = gui  
+  menuOptions.Parent = menuButton  
 
 local menuOptions2 = Instance.new("Frame")  
   menuOptions2.Size = UDim2.new(0, 200, 0, 250)  
