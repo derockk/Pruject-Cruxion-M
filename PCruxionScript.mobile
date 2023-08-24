@@ -218,7 +218,7 @@ game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = stopSpeed
  local function enableScript() 
      loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))() 
   
-
+local function enableScript() 
 local soundId = "rbxassetid://1053296915"
     local sound = Instance.new("Sound")
     sound.SoundId = soundId
@@ -438,6 +438,11 @@ local soundId = "rbxassetid://1053296915"
  optionButton8.MouseButton1Click:Connect(enableScript8)  
   
  local function toggleMenu() 
+ local soundId = "rbxassetid://6895079853"
+    local sound = Instance.new("Sound")
+    sound.SoundId = soundId
+    sound.Parent = workspace
+    sound:Play()
      menuOptions.Visible = not menuOptions.Visible 
  end 
   
