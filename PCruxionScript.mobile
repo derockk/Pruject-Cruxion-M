@@ -194,7 +194,7 @@ game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = stopSpeed
  menuOptions.Parent = gui 
   
  local menuText = Instance.new("TextLabel") 
- menuText.Text = "Script Menu"  
+ menuText.Text = "Script Hub"  
  menuText.Size = UDim2.new(0, 480, 0, 25) 
  menuText.Position = UDim2.new(0, 10, 0, 10) 
  menuText.BackgroundColor3 = Color3.new(0, 0, 0) 
@@ -421,6 +421,55 @@ local soundId = "rbxassetid://1053296915"
   testNotif.Visible = false  
   end 
   
+local optionButton9 = Instance.new("TextButton")  
+  optionButton9.Text = "Comet"  
+  optionButton9.Size = UDim2.new(0, 200, 0, 25)  
+  optionButton9.Position = UDim2.new(0, 290, 0, 70)  
+  optionButton9.BackgroundColor3 = Color3.new(0, 0, 0)  
+  optionButton9.TextColor3 = Color3.new(1, 1, 1)  
+  optionButton9.Font = Enum.Font.SourceSansBold  
+  optionButton9.FontSize = Enum.FontSize.Size24  
+  optionButton9.BackgroundTransparency = 0.25  
+  optionButton9.Parent = menuOptions  
+  
+  local function enableScript9()  
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/FE/main/Comet"))();
+  
+ local soundId = "rbxassetid://1053296915"
+    local sound = Instance.new("Sound")
+    sound.SoundId = soundId
+    sound.Parent = workspace
+    sound:Play()
+
+  testNotif.Visible = true  
+  wait(3)  
+  testNotif.Visible = false  
+  end 
+
+local optionButton10 = Instance.new("TextButton")  
+  optionButton10.Text = "Lightux"  
+  optionButton10.Size = UDim2.new(0, 200, 0, 25)  
+  optionButton10.Position = UDim2.new(0, 290, 0, 100)  
+  optionButton10.BackgroundColor3 = Color3.new(0, 0, 0)  
+  optionButton10.TextColor3 = Color3.new(1, 1, 1)  
+  optionButton10.Font = Enum.Font.SourceSansBold  
+  optionButton10.FontSize = Enum.FontSize.Size24  
+  optionButton10.BackgroundTransparency = 0.25  
+  optionButton10.Parent = menuOptions  
+  
+  local function enableScript10()  
+      loadstring(game:HttpGet(('https://raw.githubusercontent.com/zeuise0002/SSSWWW222/main/README.md'),true))()
+
+ local soundId = "rbxassetid://1053296915"
+    local sound = Instance.new("Sound")
+    sound.SoundId = soundId
+    sound.Parent = workspace
+    sound:Play()
+
+  testNotif.Visible = true  
+  wait(3)  
+  testNotif.Visible = false  
+  end 
  optionButton.MouseButton1Click:Connect(enableScript) 
   
  optionButton2.MouseButton1Click:Connect(enableScript2)  
@@ -436,6 +485,10 @@ local soundId = "rbxassetid://1053296915"
  optionButton7.MouseButton1Click:Connect(enableScript7) 
   
  optionButton8.MouseButton1Click:Connect(enableScript8)  
+
+optionButton9.MouseButton1Click:Connect(enableScript9) 
+
+optionButton10.MouseButton1Click:Connect(enableScript10) 
   
  local function toggleMenu() 
  local soundId = "rbxassetid://6895079853"
