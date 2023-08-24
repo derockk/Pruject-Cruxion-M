@@ -1,1 +1,61 @@
-a
+local gui = Instance.new("ScreenGui") 
+ gui.Parent = game.Players.LocalPlayer.PlayerGui 
+
+local windowFrame = Instance.new("Frame") 
+windowFrame.Size = UDim2.new(0, 500, 0, 250)
+windowFrame.Position = UDim2.new(0, 75, 0, 50)
+windowFrame.BackgroundColor3 = Color3.new(0, 0, 0)
+windowFrame.BackgroundTransparency = 0.75
+windowFrame.Parent = gui
+
+local intext1 = Instance.new("TextLabel") 
+intext1.Text = "Please enter the correct password in the TextBox below."
+intext1.Position = UDim2.new(0, 10, 0, 140)
+intext1.Size = UDim2.new(0, 480, 0, 50)
+intext1.BackgroundTransparency = 1
+intext1.TextColor3 = Color3.new(1, 1, 1)
+intext1.Font = Enum.Font.SourceSansBold
+intext1.FontSize = Enum.FontSize.Size24
+intext1.Parent = windowFrame
+
+local logoName = Instance.new("TextLabel") 
+logoName.Text = "Pruject/Cruxion:M" 
+logoName.Size = UDim2.new(0, 100, 0, 50)
+logoName.Position = UDim2.new(0, 35, 0, -10)
+logoName.Font = Enum.Font.SourceSansBold
+logoName.FontSize = Enum.FontSize.Size24
+logoName.TextColor3 = Color3.new(1, 1, 1) 
+logoName.BackgroundColor3 = Color3.new(0, 0, 0)
+logoName.BackgroundTransparency = 1
+logoName.Parent = windowFrame
+
+local password = "yawaningapassword"
+
+local function activateScript() loadstring(game:HttpGet("https://raw.githubusercontent.com/derockk/Pruject-Cruxion-M/main/PCruxionScript.mobile"))()
+end
+
+local function checkPassword(input)
+    if input == password then
+        activateScript()
+    else
+        print("Incorrect Password") 
+    end
+end
+
+local textbox = Instance.new("TextBox")
+textbox.Parent = windowFrame
+textbox.BackgroundTransparency = 0.50
+textbox.BackgroundColor3 = Color3.new(0, 0, 0) 
+textbox.TextColor3 = Color3.new(1, 1, 1)
+textbox.Position = UDim2.new(0, 10, 0, 190)
+textbox.Size = UDim2.new(0, 480, 0, 50)
+textbox.PlaceholderText = "Enter Password. "
+textbox.FocusLost:Connect(function(enterPressed)
+    if enterPressed then
+        checkPassword(textbox.Text)
+        textbox:Destroy()
+        logoName:Destroy()
+windowFrame:Destroy() 
+intext1:Destroy() 
+    end
+end)
