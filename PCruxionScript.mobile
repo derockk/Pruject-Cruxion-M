@@ -231,7 +231,7 @@ local nextpage = Instance.new("TextButton")
   nextpage.BackgroundTransparency = 0.75  
   nextpage.Parent = menuOptions 
 
-local prevpage = Instance2.new("TextButton")  
+local prevpage = Instance.new("TextButton")  
   prevpage.Text = "<"  
   prevpage.Size = UDim2.new(0, 32, 0, 32)  
   prevpage.Position = UDim2.new(0, -10, 0, 260)  
