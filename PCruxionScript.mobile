@@ -101,7 +101,7 @@ stopButton.Visible = false
  closeButton.Position = UDim2.new(0, 105, 0, -31) 
  closeButton.BackgroundColor3 = Color3.new(0, 0, 0) 
  closeButton.TextColor3 = Color3.new(1, 1, 1) 
- closeButton.BackgroundTransparency = 0.75 
+ closeButton.BackgroundTransparency = 0.50 
  closeButton.Visible = false 
  closeButton.Parent = gui 
   
