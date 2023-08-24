@@ -218,7 +218,6 @@ game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = stopSpeed
  local function enableScript() 
      loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))() 
   
-local function enableScript() 
 local soundId = "rbxassetid://1053296915"
     local sound = Instance.new("Sound")
     sound.SoundId = soundId
