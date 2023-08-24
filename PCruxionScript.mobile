@@ -34,7 +34,7 @@ local testNotif2 = Instance.new("TextLabel")
  runButton.Position = UDim2.new(0, 600, 0, 40)  
  runButton.BackgroundColor3 = Color3.new(0, 0, 0) 
  runButton.TextColor3 = Color3.new(1, 1, 1) 
- runButton.BackgroundTransparency = 0.75
+ runButton.BackgroundTransparency = 0.50
 runButton.Visible = true
  runButton.Parent = gui 
   
@@ -44,7 +44,7 @@ runButton.Visible = true
  stopButton.Position = UDim2.new(0, 600, 0, 40) 
  stopButton.BackgroundColor3 = Color3.new(0, 0, 0) 
  stopButton.TextColor3 = Color3.new(1, 1, 1) 
- stopButton.BackgroundTransparency = 0.75
+ stopButton.BackgroundTransparency = 0.50
 stopButton.Visible = false
  stopButton.Parent = gui 
   
