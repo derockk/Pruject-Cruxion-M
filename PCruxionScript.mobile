@@ -606,6 +606,7 @@ local soundId = "rbxassetid://6895079853"
 menuOptions.Visible = true 
  menuButton.Visible = false 
 menudesc.Visible = true
+end
  menuButton.MouseButton1Click:Connect(openMenu)  
   
  menuButton2.MouseButton1Click:Connect(closeMenu)
