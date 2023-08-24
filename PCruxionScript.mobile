@@ -190,25 +190,25 @@ game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = stopSpeed
   menuOptions.Position = UDim2.new(0, 70, 0, 30)  
   menuOptions.BackgroundColor3 = Color3.new(0, 0, 0)  
   menuOptions.Visible = false  
-  menuOptions.BackgroundTransparency = 0.25  
+  menuOptions.BackgroundTransparency = 0.75  
   menuOptions.Parent = gui  
+
+local menuOptions2 = Instance.new("Frame")  
+  menuOptions2.Size = UDim2.new(0, 200, 0, 250)  
+  menuOptions2.Position = UDim2.new(0, 70, 0, 30)  
+  menuOptions2.BackgroundColor3 = Color3.new(0, 0, 0)  
+  menuOptions2.Visible = false  
+  menuOptions2.BackgroundTransparency = 0.75  
+  menuOptions2.Parent = menuOptions 
 
 local menudesc = Instance.new("Frame")  
   menudesc.Size = UDim2.new(0, 300, 0, 250)  
   menudesc.Position = UDim2.new(0, 300, 0, 30)  
   menudesc.BackgroundColor3 = Color3.new(0, 0, 0)  
   menudesc.Visible = false  
-  menudesc.BackgroundTransparency = 0.25  
+  menudesc.BackgroundTransparency = 0.75  
   menudesc.Parent = gui  
    
- local menuOptions = Instance.new("Frame") 
- menuOptions.Size = UDim2.new(0, 200, 0, 250) 
- menuOptions.Position = UDim2.new(0, 75, 0, 30) 
- menuOptions.BackgroundColor3 = Color3.new(0, 0, 0) 
- menuOptions.Visible = false 
- menuOptions.BackgroundTransparency = 0.5 
- menuOptions.Parent = gui 
-
 local menuButton2 = Instance.new("TextButton")  
   menuButton2.Text = "X"  
   menuButton2.Size = UDim2.new(0, 32, 0, 32)  
@@ -217,12 +217,34 @@ local menuButton2 = Instance.new("TextButton")
   menuButton2.TextColor3 = Color3.new(1, 1, 1)  
   menuButton2.Font = Enum.Font.SourceSansBold  
   menuButton2.FontSize = Enum.FontSize.Size24  
-  menuButton2.BackgroundTransparency = 1  
+  menuButton2.BackgroundTransparency = 0.75  
   menuButton2.Parent = menuOptions 
   
+local nextpage = Instance.new("TextButton")  
+  nextpage.Text = ">"  
+  nextpage.Size = UDim2.new(0, 32, 0, 32)  
+  nextpage.Position = UDim2.new(0, 210, 0, 260)  
+  nextpage.BackgroundColor3 = Color3.new(0, 0, 0)  
+  nextpage.TextColor3 = Color3.new(1, 1, 1)  
+  nextpage.Font = Enum.Font.SourceSansBold  
+  nextpage.FontSize = Enum.FontSize.Size24  
+  nextpage.BackgroundTransparency = 0.75  
+  nextpage.Parent = menuOptions 
+
+local prevpage = Instance2.new("TextButton")  
+  prevpage.Text = "<"  
+  prevpage.Size = UDim2.new(0, 32, 0, 32)  
+  prevpage.Position = UDim2.new(0, -10, 0, 260)  
+  prevpage.BackgroundColor3 = Color3.new(0, 0, 0)  
+  nextpage.TextColor3 = Color3.new(1, 1, 1)  
+  prevpage.Font = Enum.Font.SourceSansBold  
+  prevpage.FontSize = Enum.FontSize.Size24  
+  prevpage.BackgroundTransparency = 0.75  
+  prevpage.Parent = menuOptions2
+
  local menuText = Instance.new("TextLabel") 
  menuText.Text = "Script Hub"  
- menuText.Size = UDim2.new(0, 180, 0, 20) 
+ menuText.Size = UDim2.new(0, 280, 0, 15) 
  menuText.Position = UDim2.new(0, 10, 0, 10) 
  menuText.BackgroundColor3 = Color3.new(0, 0, 0) 
  menuText.Font = Enum.Font.SourceSansBold 
@@ -230,16 +252,38 @@ local menuButton2 = Instance.new("TextButton")
  menuText.TextColor3 = Color3.new(1, 1, 1) 
  menuText.BackgroundTransparency = 1
  menuText.Parent = menudesc
+
+local page1 = Instance.new("TextLabel") 
+ page1.Text = "Page 1"  
+ page1.Size = UDim2.new(0, 200, 0, 20) 
+ page1.Position = UDim2.new(0, 0, 0, -40) 
+ page1.BackgroundColor3 = Color3.new(0, 0, 0) 
+ page1.Font = Enum.Font.SourceSansBold 
+ page1.FontSize = Enum.FontSize.Size24 
+ page1.TextColor3 = Color3.new(1, 1, 1) 
+ page1.BackgroundTransparency = 1
+ page1.Parent = menuOptions
+
+local page2 = Instance.new("TextLabel") 
+ page2.Text = "Page 2"  
+ page2.Size = UDim2.new(0, 200, 0, 20) 
+ page2.Position = UDim2.new(0, 0, 0, -40) 
+ menuText.BackgroundColor3 = Color3.new(0, 0, 0) 
+ page2.Font = Enum.Font.SourceSansBold 
+ page2.FontSize = Enum.FontSize.Size24 
+ page2.TextColor3 = Color3.new(1, 1, 1) 
+ page2.BackgroundTransparency = 1
+ page2.Parent = menuOptions2
   
  local optionButton = Instance.new("TextButton") 
  optionButton.Text = "Mobile Keyboard" 
  optionButton.Size = UDim2.new(0, 180, 0, 20) 
- optionButton.Position = UDim2.new(0, 10, 0, 40) 
+ optionButton.Position = UDim2.new(0, 10, 0, 20) 
  optionButton.BackgroundColor3 = Color3.new(0, 0, 0) 
  optionButton.TextColor3 = Color3.new(1, 1, 1) 
  optionButton.Font = Enum.Font.SourceSansBold 
  optionButton.FontSize = Enum.FontSize.Size24 
- optionButton.BackgroundTransparency = 0.25 
+ optionButton.BackgroundTransparency = 0.75
  optionButton.Parent = menuOptions 
   
  local function enableScript() 
@@ -257,13 +301,13 @@ testNotif.Visible = true
   
  local optionButton2 = Instance.new("TextButton") 
  optionButton2.Text = "Infinite Yield" 
- optionButton2.Size = UDim2.new(0, 200, 0, 25) 
- optionButton2.Position = UDim2.new(0, 10, 0, 100) 
+ optionButton2.Size = UDim2.new(0, 180, 0, 20) 
+ optionButton2.Position = UDim2.new(0, 10, 0, 50) 
  optionButton2.BackgroundColor3 = Color3.new(0, 0, 0) 
  optionButton2.TextColor3 = Color3.new(1, 1, 1) 
  optionButton2.Font = Enum.Font.SourceSansBold 
  optionButton2.FontSize = Enum.FontSize.Size24 
- optionButton2.BackgroundTransparency = 0.25 
+ optionButton2.BackgroundTransparency = 0.75 
  optionButton2.Parent = menuOptions 
   
  local function enableScript2() 
@@ -282,13 +326,13 @@ local soundId = "rbxassetid://1053296915"
   
  local optionButton3 = Instance.new("TextButton") 
  optionButton3.Text = "Mobile Fly GUI" 
- optionButton3.Size = UDim2.new(0, 200, 0, 25) 
- optionButton3.Position = UDim2.new(0, 10, 0, 130) 
+ optionButton3.Size = UDim2.new(0, 180, 0, 20) 
+ optionButton3.Position = UDim2.new(0, 10, 0, 80) 
  optionButton3.BackgroundColor3 = Color3.new(0, 0, 0) 
  optionButton3.TextColor3 = Color3.new(1, 1, 1) 
  optionButton3.Font = Enum.Font.SourceSansBold 
  optionButton3.FontSize = Enum.FontSize.Size24 
- optionButton3.BackgroundTransparency = 0.25 
+ optionButton3.BackgroundTransparency = 0.75
  optionButton3.Parent = menuOptions 
   
  local function enableScript3() 
@@ -307,13 +351,13 @@ local soundId = "rbxassetid://1053296915"
   
  local optionButton4 = Instance.new("TextButton") 
  optionButton4.Text = "Nameless Admin" 
- optionButton4.Size = UDim2.new(0, 200, 0, 25) 
- optionButton4.Position = UDim2.new(0, 10, 0, 70) 
+ optionButton4.Size = UDim2.new(0, 180, 0, 20) 
+ optionButton4.Position = UDim2.new(0, 10, 0, 110) 
  optionButton4.BackgroundColor3 = Color3.new(0, 0, 0) 
  optionButton4.TextColor3 = Color3.new(1, 1, 1) 
  optionButton4.Font = Enum.Font.SourceSansBold 
  optionButton4.FontSize = Enum.FontSize.Size24 
- optionButton4.BackgroundTransparency = 0.25 
+ optionButton4.BackgroundTransparency = 0.75
  optionButton4.Parent = menuOptions 
   
  local function enableScript4() 
@@ -332,13 +376,13 @@ local soundId = "rbxassetid://1053296915"
   
  local optionButton5 = Instance.new("TextButton") 
  optionButton5.Text = "H4x Admin" 
- optionButton5.Size = UDim2.new(0, 200, 0, 25) 
- optionButton5.Position = UDim2.new(0, 10, 0, 160) 
+ optionButton5.Size = UDim2.new(0, 180, 0, 20) 
+ optionButton5.Position = UDim2.new(0, 10, 0, 140) 
  optionButton5.BackgroundColor3 = Color3.new(0, 0, 0) 
  optionButton5.TextColor3 = Color3.new(1, 1, 1) 
  optionButton5.Font = Enum.Font.SourceSansBold 
  optionButton5.FontSize = Enum.FontSize.Size24 
- optionButton5.BackgroundTransparency = 0.25 
+ optionButton5.BackgroundTransparency = 0.75
  optionButton5.Parent = menuOptions 
   
  local function enableScript5() 
@@ -374,13 +418,13 @@ local soundId = "rbxassetid://1053296915"
   
  local optionButton6 = Instance.new("TextButton") 
  optionButton6.Text = "Ghost Hub" 
- optionButton6.Size = UDim2.new(0, 200, 0, 25) 
- optionButton6.Position = UDim2.new(0, 10, 0, 190) 
+ optionButton6.Size = UDim2.new(0, 180, 0, 20) 
+ optionButton6.Position = UDim2.new(0, 10, 0, 170) 
  optionButton6.BackgroundColor3 = Color3.new(0, 0, 0) 
  optionButton6.TextColor3 = Color3.new(1, 1, 1) 
  optionButton6.Font = Enum.Font.SourceSansBold 
  optionButton6.FontSize = Enum.FontSize.Size24 
- optionButton6.BackgroundTransparency = 0.25 
+ optionButton6.BackgroundTransparency = 0.75
  optionButton6.Parent = menuOptions 
   
  local function enableScript6() 
@@ -399,13 +443,13 @@ local soundId = "rbxassetid://1053296915"
   
  local optionButton7 = Instance.new("TextButton")  
   optionButton7.Text = "Tp Tool"  
-  optionButton7.Size = UDim2.new(0, 200, 0, 25)  
-  optionButton7.Position = UDim2.new(0, 10, 0, 220)  
+  optionButton7.Size = UDim2.new(0, 180, 0, 20)  
+  optionButton7.Position = UDim2.new(0, 10, 0, 200)  
   optionButton7.BackgroundColor3 = Color3.new(0, 0, 0)  
   optionButton7.TextColor3 = Color3.new(1, 1, 1)  
   optionButton7.Font = Enum.Font.SourceSansBold  
   optionButton7.FontSize = Enum.FontSize.Size24  
-  optionButton7.BackgroundTransparency = 0.25  
+  optionButton7.BackgroundTransparency = 0.75
   optionButton7.Parent = menuOptions  
   
   local function enableScript7()  
@@ -425,12 +469,12 @@ local soundId = "rbxassetid://1053296915"
  local optionButton8 = Instance.new("TextButton")  
   optionButton8.Text = "Shiftlock (buggy)"  
   optionButton8.Size = UDim2.new(0, 200, 0, 25)  
-  optionButton8.Position = UDim2.new(0, 290, 0, 40)  
+  optionButton8.Position = UDim2.new(0, 10, 0, 230)  
   optionButton8.BackgroundColor3 = Color3.new(0, 0, 0)  
   optionButton8.TextColor3 = Color3.new(1, 1, 1)  
   optionButton8.Font = Enum.Font.SourceSansBold  
   optionButton8.FontSize = Enum.FontSize.Size24  
-  optionButton8.BackgroundTransparency = 0.25  
+  optionButton8.BackgroundTransparency = 0.75  
   optionButton8.Parent = menuOptions  
   
   local function enableScript8()  
@@ -449,14 +493,14 @@ local soundId = "rbxassetid://1053296915"
   
 local optionButton9 = Instance.new("TextButton")  
   optionButton9.Text = "[Patched]"  
-  optionButton9.Size = UDim2.new(0, 200, 0, 25)  
-  optionButton9.Position = UDim2.new(0, 290, 0, 70)  
+  optionButton9.Size = UDim2.new(0, 180, 0, 20)  
+  optionButton9.Position = UDim2.new(0, 10, 0, 10)  
   optionButton9.BackgroundColor3 = Color3.new(0, 0, 0)  
   optionButton9.TextColor3 = Color3.new(1, 1, 1)  
   optionButton9.Font = Enum.Font.SourceSansBold  
   optionButton9.FontSize = Enum.FontSize.Size24  
-  optionButton9.BackgroundTransparency = 0.25  
-  optionButton9.Parent = menuOptions  
+  optionButton9.BackgroundTransparency = 0.75  
+  optionButton9.Parent = menuOptions2  
   
   local function enableScript9()  
        loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/FE/main/Comet"))();
@@ -474,14 +518,14 @@ local optionButton9 = Instance.new("TextButton")
 
 local optionButton10 = Instance.new("TextButton")  
   optionButton10.Text = "Lightux"  
-  optionButton10.Size = UDim2.new(0, 200, 0, 25)  
-  optionButton10.Position = UDim2.new(0, 290, 0, 100)  
+  optionButton10.Size = UDim2.new(0, 180, 0, 20)  
+  optionButton10.Position = UDim2.new(0, 10, 0, 40)  
   optionButton10.BackgroundColor3 = Color3.new(0, 0, 0)  
   optionButton10.TextColor3 = Color3.new(1, 1, 1)  
   optionButton10.Font = Enum.Font.SourceSansBold  
   optionButton10.FontSize = Enum.FontSize.Size24  
-  optionButton10.BackgroundTransparency = 0.25  
-  optionButton10.Parent = menuOptions  
+  optionButton10.BackgroundTransparency = 0.75
+  optionButton10.Parent = menuOptions2 
   
   local function enableScript10()  
       loadstring(game:HttpGet(('https://raw.githubusercontent.com/zeuise0002/SSSWWW222/main/README.md'),true))()
@@ -525,7 +569,6 @@ local function openMenu()
      sound:Play() 
       menuOptions.Visible = true 
  menuButton.Visible = false 
- menuButton2.Visible = true 
 menudesc.Visible = true
   end  
   
@@ -537,10 +580,36 @@ menudesc.Visible = true
      sound:Play() 
       menuOptions.Visible = false 
  menuButton.Visible = true 
- menuButton2.Visible = false 
+ menuOptions.Visible = false
 menudesc.Visible = false
   end  
-  
+ 
+local function fnextpage() 
+local soundId = "rbxassetid://6895079853"
+    local sound = Instance.new("Sound")
+    sound.SoundId = soundId
+    sound.Parent = workspace
+    sound:Play()
+
+menuOptions2.Visible = true
+menuOptions.Visible = false
+menuButton.Visible = true
+end
+
+local function fpreypage() 
+local soundId = "rbxassetid://6895079853"
+    local sound = Instance.new("Sound")
+    sound.SoundId = soundId
+    sound.Parent = workspace
+    sound:Play()
+
+menuOptions.Visible = true 
+ menuButton.Visible = false 
+menudesc.Visible = true
  menuButton.MouseButton1Click:Connect(openMenu)  
   
- menuButton2.MouseButton1Click:Connect(closeMenu) 
+ menuButton2.MouseButton1Click:Connect(closeMenu)
+
+nextpage.MouseButton1Click:Connect(fnextpage)
+
+prevpage.MouseButton1Click:Connect(fpreypage)
