@@ -29,33 +29,23 @@ logoName.BackgroundColor3 = Color3.new(0, 0, 0)
 logoName.BackgroundTransparency = 1
 logoName.Parent = windowFrame
 
-local password = "yawaningapassword"
+local enterButton = Instance.new("TextButton") 
+enterButton.Text = "Enter" 
+enterButton.Size = UDim2.new(0, 480, 0, 50)
+enterButton.Position = UDim2.new(0, 10, 0, 40)
+enterButton.BackgroundColor3 = Color3.new(0, 0, 0)
+enterButton.TextColor3 = Color3.new(1, 1, 1)
+enterButton.Font = Enum.Font.SourceSansBold 
+enterButton.FontSize = Enum.FontSize.Size24 
+enterButton.BackgroundTransparency = 0.25
+enterButton.Parent = windowFrame
 
 local function activateScript() loadstring(game:HttpGet("https://raw.githubusercontent.com/derockk/Pruject-Cruxion-M/main/PCruxionScript.mobile"))()
-end
 
-local function checkPassword(input)
-    if input == password then
-        activateScript()
-    else
-        print("Incorrect Password") 
-    end
-end
-
-local textbox = Instance.new("TextBox")
-textbox.Parent = windowFrame
-textbox.BackgroundTransparency = 0.50
-textbox.BackgroundColor3 = Color3.new(0, 0, 0) 
-textbox.TextColor3 = Color3.new(1, 1, 1)
-textbox.Position = UDim2.new(0, 10, 0, 190)
-textbox.Size = UDim2.new(0, 480, 0, 50)
-textbox.PlaceholderText = "Enter Password. "
-textbox.FocusLost:Connect(function(enterPressed)
-    if enterPressed then
-        checkPassword(textbox.Text)
-        textbox:Destroy()
+        enterButton:Destroy()
         logoName:Destroy()
 windowFrame:Destroy() 
 intext1:Destroy() 
-    end
-end)
+end
+
+enterButton.MouseButton1Click:Connect(activateScript)
