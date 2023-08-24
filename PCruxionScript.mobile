@@ -170,7 +170,65 @@ game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = stopSpeed
  runButton.MouseButton1Click:Connect(run) 
  stopButton.MouseButton1Click:Connect(stopRunning) 
   
+   local gui = Instance.new("ScreenGui")  
+  gui.Name = "MenuGui"  
+  gui.Parent = game.Players.LocalPlayer.PlayerGui  
   
+  local menuButton = Instance.new("TextButton")  
+  menuButton.Text = "M"  
+  menuButton.Size = UDim2.new(0, 32, 0, 32)  
+  menuButton.Position = UDim2.new(0, 15, 0, 10)  
+  menuButton.BackgroundColor3 = Color3.new(0, 0, 0)  
+  menuButton.TextColor3 = Color3.new(1, 1, 1)  
+  menuButton.Font = Enum.Font.SourceSansBold  
+  menuButton.FontSize = Enum.FontSize.Size24  
+  menuButton.BackgroundTransparency = 0.5  
+  menuButton.Parent = gui  
+  
+  local menuOptions = Instance.new("Frame")  
+  menuOptions.Size = UDim2.new(0, 500, 0, 250)  
+  menuOptions.Position = UDim2.new(0, 70, 0, 30)  
+  menuOptions.BackgroundColor3 = Color3.new(0, 0, 0)  
+  menuOptions.Visible = false  
+  menuOptions.BackgroundTransparency = 0.25  
+  menuOptions.Parent = gui  
+  
+ local menuButton2 = Instance.new("TextButton")  
+  menuButton2.Text = "X"  
+  menuButton2.Size = UDim2.new(0, 32, 0, 32)  
+  menuButton2.Position = UDim2.new(0, -10, 0, -10)  
+  menuButton2.BackgroundColor3 = Color3.new(0, 0, 0)  
+  menuButton2.TextColor3 = Color3.new(1, 1, 1)  
+  menuButton2.Font = Enum.Font.SourceSansBold  
+  menuButton2.FontSize = Enum.FontSize.Size24  
+  menuButton2.BackgroundTransparency = 1  
+  menuButton2.Parent = menuOptions 
+  
+ local function openMenu()  
+  local soundId = "rbxassetid://6895079853" 
+     local sound = Instance.new("Sound") 
+     sound.SoundId = soundId 
+     sound.Parent = workspace 
+     sound:Play() 
+      menuOptions.Visible = true 
+ menuButton.Visible = false 
+ menuButton2.Visible = true 
+  end  
+  
+ local function closeMenu()  
+  local soundId = "rbxassetid://6895079853" 
+     local sound = Instance.new("Sound") 
+     sound.SoundId = soundId 
+     sound.Parent = workspace 
+     sound:Play() 
+      menuOptions.Visible = false 
+ menuButton.Visible = true 
+ menuButton2.Visible = false 
+  end  
+  
+ menuButton.MouseButton1Click:Connect(openMenu)  
+  
+ menuButton2.MouseButton1Click:Connect(closeMenu) 
 
  local menuOptions = Instance.new("Frame") 
  menuOptions.Size = UDim2.new(0, 500, 0, 250) 
