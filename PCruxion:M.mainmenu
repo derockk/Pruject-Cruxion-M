@@ -16,10 +16,7 @@ intext1.TextColor3 = Color3.new(1, 1, 1)
 intext1.Font = Enum.Font.SourceSansBold
 intext1.FontSize = Enum.FontSize.Size24
 intext1.Parent = windowFrame
-
-intext1:GetPropertyChangedSignal("Parent"):Connect(function()
     intext1.Text = "Welcome " .. game.Players.LocalPlayer.Name .. " 🗿"
-end)
 
 local logoName = Instance.new("TextLabel") 
 logoName.Text = "Pruject/Cruxion:M" 
