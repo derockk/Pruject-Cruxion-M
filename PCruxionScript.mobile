@@ -34,7 +34,7 @@ local testNotif2 = Instance.new("TextLabel")
  runButton.Position = UDim2.new(0, 600, 0, 40)  
  runButton.BackgroundColor3 = Color3.new(0, 0, 0) 
  runButton.TextColor3 = Color3.new(1, 1, 1) 
- runButton.BackgroundTransparency = 0.75
+ runButton.BackgroundTransparency = 0.50
 runButton.Visible = true
  runButton.Parent = gui 
   
@@ -44,7 +44,7 @@ runButton.Visible = true
  stopButton.Position = UDim2.new(0, 600, 0, 40) 
  stopButton.BackgroundColor3 = Color3.new(0, 0, 0) 
  stopButton.TextColor3 = Color3.new(1, 1, 1) 
- stopButton.BackgroundTransparency = 0.75
+ stopButton.BackgroundTransparency = 0.50
 stopButton.Visible = false
  stopButton.Parent = gui 
   
@@ -208,7 +208,7 @@ local menuOptions2 = Instance.new("Frame")
   menuOptions2.Position = UDim2.new(0, 70, 0, 30)  
   menuOptions2.BackgroundColor3 = Color3.new(0, 0, 0)  
   menuOptions2.Visible = false  
-  menuOptions2.BackgroundTransparency = 0.75  
+  menuOptions2.BackgroundTransparency = 0.50  
   menuOptions2.Parent = gui
 
 local menudesc = Instance.new("Frame")  
@@ -619,7 +619,7 @@ menuButton.Visible = false
 menuButton2.Visible = true
 end
 
-local function fpreypage() 
+local function fprevpage() 
 local soundId = "rbxassetid://6895079853"
     local sound = Instance.new("Sound")
     sound.SoundId = soundId
@@ -637,4 +637,4 @@ end
 
 nextpage.MouseButton1Click:Connect(fnextpage)
 
-prevpage.MouseButton1Click:Connect(fpreypage)
+prevpage.MouseButton1Click:Connect(fprevpage)
