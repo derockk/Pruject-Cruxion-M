@@ -124,15 +124,13 @@ stopButton.Visible = false
  local stopSpeed = 16 
   
  local function run() 
+runButton.Visible = false
+stopButton.Visible = true
+
      if game.Players.LocalPlayer.Character.Humanoid.FloorMaterial ~= Enum.Material.Air then 
          game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = runSpeed 
      end 
  end 
-
-  local function running() 
-runButton.Visible = false
-stopButton.Visible = true
-end
 
  local function stopRunning() 
     runButton.Visible = true
