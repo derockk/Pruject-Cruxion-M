@@ -191,7 +191,7 @@ game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = stopSpeed
   menuOptions.BackgroundColor3 = Color3.new(0, 0, 0)  
   menuOptions.Visible = false  
   menuOptions.BackgroundTransparency = 0.75  
-  menuOptions.Parent = menuButton  
+  menuOptions.Parent = gui
 
 local menuOptions2 = Instance.new("Frame")  
   menuOptions2.Size = UDim2.new(0, 200, 0, 250)  
@@ -199,7 +199,7 @@ local menuOptions2 = Instance.new("Frame")
   menuOptions2.BackgroundColor3 = Color3.new(0, 0, 0)  
   menuOptions2.Visible = false  
   menuOptions2.BackgroundTransparency = 0.75  
-  menuOptions2.Parent = menuOptions 
+  menuOptions2.Parent = gui
 
 local menudesc = Instance.new("Frame")  
   menudesc.Size = UDim2.new(0, 300, 0, 250)  
@@ -567,9 +567,11 @@ local function openMenu()
      sound.SoundId = soundId 
      sound.Parent = workspace 
      sound:Play() 
+
       menuOptions.Visible = true 
  menuButton.Visible = false 
 menudesc.Visible = true
+menuOptions2.Visible = false
   end  
   
  local function closeMenu()  
@@ -578,6 +580,7 @@ menudesc.Visible = true
      sound.SoundId = soundId 
      sound.Parent = workspace 
      sound:Play() 
+
       menuOptions.Visible = false 
  menuButton.Visible = true 
  menuOptions.Visible = false
@@ -592,6 +595,7 @@ local soundId = "rbxassetid://6895079853"
     sound:Play()
 
 menuOptions2.Visible = true
+menudesc.Visible = true
 menuOptions.Visible = false
 menuButton.Visible = true
 end
@@ -606,6 +610,7 @@ local soundId = "rbxassetid://6895079853"
 menuOptions.Visible = true 
  menuButton.Visible = false 
 menudesc.Visible = true
+menuOptions2.Visible = false
 end
  menuButton.MouseButton1Click:Connect(openMenu)  
   
