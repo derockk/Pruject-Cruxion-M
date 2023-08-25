@@ -70,29 +70,6 @@ UIAspectRatioConstraint_2.AspectRatio = 1.000
 UITextSizeConstraint_2.Parent = C
 UITextSizeConstraint_2.MaxTextSize = 49
 
-Console.Name = Console
-Console.Parent = ScreenGui
-Console.Active = false
-Console.BackgroundColor3 = Color3.new(0, 0, 0)
-Console.BackgroundTransparency = 0.50
-Console.Position = UDim2.new(0.869000018, 0, 0.0820000023, 0)
-Console.Selectable = false
-Console.Size = UDim2.new(0.0414937772, 0, 0.0802139044, 0)
-Console.Font = Enum.Font.SourceSans
-Console.Text = "CONSOLE"
-Console.TextColor3 = Color3.new(1, 1, 1)
-Console.TextScaled = true
-Console.TextSize = 14.000
-Console.TextWrapped = true
-
-UICorner_4.CornerRadius = UDim.new(0.150000006, 0)
-UICorner_4.Parent = Console
-
-UIAspectRatioConstraint_4.Parent = Console
-
-UITextSizeConstraint_4.Parent = Console
-UITextSizeConstraint_4.MaxTextSize = 8
-
 HideShow.Name = "HideShow"
 HideShow.Parent = ScreenGui
 HideShow.Active = false
@@ -136,17 +113,8 @@ local function TTZYCWP_fake_script() -- C.Script
 end
 coroutine.wrap(TTZYCWP_fake_script)()
 
-local function HXGRRA_fake_script() -- Console.Script 
-	local script = Instance.new('Script', Console)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		pcall(function() keypress(Enum.KeyCode[string.upper("F9")]) end)
-	end)
-end
-coroutine.wrap(HXGRRA_fake_script)()
 local function ILHHCCK_fake_script() -- HideShow.Script 
 	local script = Instance.new('Script', HideShow)
-
 	script.Parent.MouseButton1Click:Connect(function()
 	 if script.Parent.Parent.HideShow.Text == "HIDE BUTTON" then
 		script.Parent.Parent.Sprint.Visible = false
