@@ -1,10 +1,6 @@
 local notifGui = Instance.new("ScreenGui")  
   notifGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")  
   
-local UICorner_6 = Instance.new("UICorner")
-local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint") 
-local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint") 
-
   local spptNotif = Instance.new("TextLabel")  
   spptNotif.Text = "Modified by Rok"  
   spptNotif.Size = UDim2.new(0, 200, 0, 30)  
@@ -13,35 +9,12 @@ local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
   spptNotif.BackgroundColor3 = Color3.new(0, 0, 0)  
   spptNotif.TextColor3 = Color3.new(1, 1, 1)  
   spptNotif.Parent = notifGui  
-  spptNotif.Visible = true    
-
-UICorner_6.CornerRadius = UDim.new(0.150000006, 0)
-UICorner_6.Parent = spptNotif
-
-UIAspectRatioConstraint_6.Parent = spptNotif
-UIAspectRatioConstraint_6.AspectRatio = 200
-
-UITextSizeConstraint_6.Parent = spptNotif
-UITextSizeConstraint_6.MaxTextSize = 49
-  
+  spptNotif.Visible = true  
+ 
 local ScreenGui = Instance.new("ScreenGui")
 local F = Instance.new("TextButton")
-local UICorner = Instance.new("UICorner")
-local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
-local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
 local C = Instance.new("TextButton")
-local UICorner_2 = Instance.new("UICorner")
-local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
-local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
-local Console = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
-local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
-local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
-local HideShow = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
-local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
-local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
-
+local HideShow = Instance.new("TextButton") 
 --Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -63,15 +36,6 @@ F.TextScaled = true
 F.TextSize = 14.000
 F.TextWrapped = true
 
-UICorner.CornerRadius = UDim.new(0.150000006, 0)
-UICorner.Parent = F
-
-UIAspectRatioConstraint.Parent = F
-UIAspectRatioConstraint.AspectRatio = 1.000
-
-UITextSizeConstraint.Parent = F
-UITextSizeConstraint.MaxTextSize = 49
-
 C.Name = "C"
 C.Parent = ScreenGui
 C.Active = false
@@ -86,15 +50,6 @@ C.TextColor3 = Color3.new(1, 1, 1)
 C.TextScaled = true
 C.TextSize = 14.000
 C.TextWrapped = true
-
-UICorner_2.CornerRadius = UDim.new(0.150000006, 0)
-UICorner_2.Parent = C
-
-UIAspectRatioConstraint_2.Parent = C
-UIAspectRatioConstraint_2.AspectRatio = 1.000
-
-UITextSizeConstraint_2.Parent = C
-UITextSizeConstraint_2.MaxTextSize = 49
 
 HideShow.Name = "HideShow"
 HideShow.Parent = ScreenGui
@@ -111,14 +66,6 @@ HideShow.TextColor3 = Color3.new(1, 1, 1)
 HideShow.TextScaled = true
 HideShow.TextSize = 14.000
 HideShow.TextWrapped = true
-
-UICorner_5.CornerRadius = UDim.new(0.150000006, 0)
-UICorner_5.Parent = HideShow
-
-UIAspectRatioConstraint_5.Parent = HideShow
-
-UITextSizeConstraint_5.Parent = HideShow
-UITextSizeConstraint_5.MaxTextSize = 19
 
 -- Scripts:
 
