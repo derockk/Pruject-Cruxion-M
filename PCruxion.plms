@@ -117,13 +117,11 @@ local function ILHHCCK_fake_script() -- HideShow.Script
 	local script = Instance.new('Script', HideShow)
 	script.Parent.MouseButton1Click:Connect(function()
 	 if script.Parent.Parent.HideShow.Text == "HIDE BUTTON" then
-		script.Parent.Parent.Sprint.Visible = false
 		script.Parent.Parent.F.Visible = false
 		script.Parent.Parent.C.Visible = false
 		script.Parent.Parent.Console.Visible = false
 		script.Parent.Parent.HideShow.Text = "SHOW BUTTON"
 		elseif script.Parent.Parent.HideShow.Text == "SHOW BUTTON" then
-			script.Parent.Parent.Sprint.Visible = true
 			script.Parent.Parent.F.Visible = true
 			script.Parent.Parent.C.Visible = true
 			script.Parent.Parent.Console.Visible = true
