@@ -119,12 +119,10 @@ local function ILHHCCK_fake_script() -- HideShow.Script
 	 if script.Parent.Parent.HideShow.Text == "HIDE BUTTON" then
 		script.Parent.Parent.F.Visible = false
 		script.Parent.Parent.C.Visible = false
-		script.Parent.Parent.Console.Visible = false
 		script.Parent.Parent.HideShow.Text = "SHOW BUTTON"
 		elseif script.Parent.Parent.HideShow.Text == "SHOW BUTTON" then
 			script.Parent.Parent.F.Visible = true
 			script.Parent.Parent.C.Visible = true
-			script.Parent.Parent.Console.Visible = true
 			script.Parent.Parent.HideShow.Text = "HIDE BUTTON"
 		end
 	end)
