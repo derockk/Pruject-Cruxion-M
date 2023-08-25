@@ -1,3 +1,29 @@
+local notifGui = Instance.new("ScreenGui")  
+  notifGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")  
+  
+local UICorner_6 = Instance.new("UICorner")
+local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint") 
+local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint") 
+
+  local spptNotif = Instance.new("TextLabel")  
+  spptNotif.Text = "Modified by Rok"  
+  spptNotif.Size = UDim2.new(0, 200, 0, 30)  
+  spptNotif.Position = UDim2.new(0, 275, 0, -31)  
+  spptNotif.BackgroundTransparency = 0.50 
+  spptNotif.BackgroundColor3 = Color3.new(0, 0, 0)  
+  spptNotif.TextColor3 = Color3.new(1, 1, 1)  
+  spptNotif.Parent = notifGui  
+  spptNotif.Visible = true    
+
+UICorner_6.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_6.Parent = spptNotif
+
+UIAspectRatioConstraint_6.Parent = spptNotif
+UIAspectRatioConstraint_6.AspectRatio = 200
+
+UITextSizeConstraint_6.Parent = spptNotif
+UITextSizeConstraint_6.MaxTextSize = 49
+  
 local ScreenGui = Instance.new("ScreenGui")
 local F = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
@@ -128,3 +154,6 @@ local function ILHHCCK_fake_script() -- HideShow.Script
 	end)
 end
 coroutine.wrap(ILHHCCK_fake_script)()
+
+wait(3)
+spptNotif.Visible = false 
