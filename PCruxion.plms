@@ -10,6 +10,8 @@ local notifGui = Instance.new("ScreenGui")
   spptNotif.TextColor3 = Color3.new(1, 1, 1)  
   spptNotif.Parent = notifGui  
   spptNotif.Visible = true  
+wait(3)
+spptNotif.Visible = false 
  
 local ScreenGui = Instance.new("ScreenGui")
 local F = Instance.new("TextButton")
@@ -101,6 +103,3 @@ local function ILHHCCK_fake_script() -- HideShow.Script
 	end)
 end
 coroutine.wrap(ILHHCCK_fake_script)()
-
-wait(3)
-spptNotif.Visible = false 
