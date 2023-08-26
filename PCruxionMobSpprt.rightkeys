@@ -9,15 +9,15 @@ local notifGui = Instance.new("ScreenGui")
    spptNotif.BackgroundColor3 = Color3.new(0, 0, 0)   
    spptNotif.TextColor3 = Color3.new(1, 1, 1)   
    spptNotif.Parent = notifGui   
-   spptNotif.Visible = true   
- wait(3) 
+   spptNotif.Visible = true  
  spptNotif.Visible = false 
 
 local gui = Instance.new("ScreenGui")
 gui.Parent = game.Players.LocalPlayer.PlayerGui
 
--- Instance
+-- Instances
 
+local guiFrame = Instance.new("Frame") 
 local F = Instance.new("TextButton") 
 local R = Instance.new("TextButton") 
 local Y = Instance.new("TextButton") 
@@ -28,8 +28,15 @@ local Q = Instance.new("TextButton")
 
 -- Properties
 
+-- Frame
+guiFrame.Name "Frame" 
+guiFrame.Parent = gui
+guiFrame.Size = UDim2.new(0, 350, 0, 150)
+guiFrame.Position = UDim2.new(0, 
+
+-- F
 F.Name = "F"
-F.Parent = gui
+F.Parent = guiFrame
 F.Text = "F" 
 F.Size = UDim2.new(0, 25, 0, 25)
 F.Position = UDim2.new(0, 200, 0, 40) 
@@ -37,4 +44,4 @@ F.Font = Enum.Font.SourceSansBold
 F.BackgroundTransparency = 0.5
 F.BackgroundColor3 = Color3.new(0, 0, 0)
 F.TextColor3 = Color3.new(1, 1, 1)
-F.TextSize = 
+F.TextSize = 20
