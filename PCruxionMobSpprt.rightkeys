@@ -1,7 +1,9 @@
 
 local gui = Instance.new("ScreenGui")
 gui.Parent = game.Players.LocalPlayer.PlayerGui
+
 -- Instance
+
 local F = Instance.new("TextButton") 
 local R = Instance.new("TextButton") 
 local Y = Instance.new("TextButton") 
@@ -10,3 +12,8 @@ local E = Instance.new("TextButton")
 local X = Instance.new("TextButton") 
 local Q = Instance.new("TextButton") 
 
+-- Properties
+
+F.Name = "F"
+F.Parents = gui
+F.Text = "F" 
