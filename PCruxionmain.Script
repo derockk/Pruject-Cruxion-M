@@ -2,16 +2,16 @@ local gui = Instance.new("ScreenGui")
 gui.Parent = game.Players.LocalPlayer.PlayerGui 
 
 -- Instances
-
+-- Run n Walk
 local Run = Instance.new("TextButton") 
 local Walk = Instance.new("TextButton") 
-
+-- Script Info
 local SInfo = Instance.new("TextButton") 
 local InfoFrame = Instance.new("Frame") 
 local SNInfo = Instance.new("TextLabel") 
 local STInfo = Instance.new("TextLabel")
 local SOInfo = Instance.new("TextLabel")
-
+-- Script Hub
 local SHub = Instance.new("TextButton") 
 local SHFrame = Instance.new("Frame") 
 local SPage1 = Instance.new("TextLabel") 
@@ -28,4 +28,8 @@ local S7 = Instance.new("TextButton")
 local S8 = Instance.new("TextButton") 
 local S9 = Instance.new("TextButton") 
 local S10 = Instance.new("TextButton") 
+local S11 = Instance.new("TextButton") 
+
+-- Properties 
+
 
