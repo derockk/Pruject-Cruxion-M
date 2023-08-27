@@ -122,12 +122,37 @@ Q.TextSize = 20
 
 -- Hide
 Hide.Name = "Hide"
-Hide.Parent = gui
+Hide.Parent = guiFrame
 Hide.Text = "Hide R Keys" 
 Hide.Size = UDim2.new(0, 25, 0, 25)
-Hide.Position = UDim2.new(0, 0, 0, 0) 
+Hide.Position = UDim2.new(0, 0, 0, 100) 
 Hide.Font = Enum.Font.SourceSansBold
 Hide.BackgroundTransparency = 0.25
 Hide.BackgroundColor3 = Color3.new(0, 0, 0)
 Hide.TextColor3 = Color3.new(1, 1, 1)
+Hide.TextWrapped = true
 Hide.TextSize = 7
+
+-- Show
+Show.Name = "Show"
+Show.Parent = guiFrame 
+Show.Text = "Show R Keys" 
+Show.Size = UDim2.new(0, 25, 0, 25)
+Show.Position = UDim2.new(0, 0, 0, 0) 
+Show.Font = Enum.Font.SourceSansBold
+Show.BackgroundTransparency = 0.25
+Show.BackgroundColor3 = Color3.new(0, 0, 0)
+Show.TextColor3 = Color3.new(1, 1, 1)
+Show.TextSize = 7
+Show.TextWrapped = true
+Show.Visible = False
+
+-- Scripts
+
+-- F
+        local script = Instance.new('Script', F) 
+  
+         script.Parent.MouseButton1Click:Connect(function() 
+                 pcall(function() keypress(Enum.KeyCode[string.upper("F")]) end) 
+         end) 
+ end
