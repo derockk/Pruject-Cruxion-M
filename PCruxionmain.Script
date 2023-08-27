@@ -2,10 +2,19 @@ local gui = Instance.new("ScreenGui")
 gui.Parent = game.Players.LocalPlayer.PlayerGui 
 
 -- Notification 
-local Notif = Instance.new("TextLabel") 
 
+  local Notif = Instance.new("TextLabel")   
+ Notif.Text = "Script Activated."   
+  Notif.Size = UDim2.new(0, 100, 0, 30)  
+  Notif.Position = UDim2.new(0, 250, 0, -31)  
+  Notif.BackgroundColor3 = Color3.new(0, 0, 0)  
+  Notif.TextColor3 = Color3.new(1, 1, 1)  
+  Notif.BackgroundTransparency = 0.50 
+  Notif.Visible = false   
+  Notif.Parent = gui
 
 -- Instances
+
 -- Run n Walk
 local Run = Instance.new("TextButton") 
 local Walk = Instance.new("TextButton") 
