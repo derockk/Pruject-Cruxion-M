@@ -1,1 +1,31 @@
+local gui = Instance.new("ScreenGui") 
+gui.Parent = game.Players.LocalPlayer.PlayerGui 
+
+-- Instances
+
+local Run = Instance.new("TextButton") 
+local Walk = Instance.new("TextButton") 
+
+local SInfo = Instance.new("TextButton") 
+local InfoFrame = Instance.new("Frame") 
+local SNInfo = Instance.new("TextLabel") 
+local STInfo = Instance.new("TextLabel")
+local SOInfo = Instance.new("TextLabel")
+
+local SHub = Instance.new("TextButton") 
+local SHFrame = Instance.new("Frame") 
+local SPage1 = Instance.new("TextLabel") 
+local SPage2 = Instance.new("TextLabel")
+local C1 = Instance.new("TextButton") 
+local C2 = Instance.new("TextButton") 
+local S1 = Instance.new("TextButton") 
+local S2 = Instance.new("TextButton") 
+local S3 = Instance.new("TextButton") 
+local S4 = Instance.new("TextButton")
+local S5 = Instance.new("TextButton") 
+local S6 = Instance.new("TextButton") 
+local S7 = Instance.new("TextButton") 
+local S8 = Instance.new("TextButton") 
+local S9 = Instance.new("TextButton") 
+local S10 = Instance.new("TextButton") 
 
