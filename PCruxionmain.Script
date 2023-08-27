@@ -1,6 +1,10 @@
 local gui = Instance.new("ScreenGui") 
 gui.Parent = game.Players.LocalPlayer.PlayerGui 
 
+-- Notification 
+local Notif = Instance.new("TextLabel") 
+
+
 -- Instances
 -- Run n Walk
 local Run = Instance.new("TextButton") 
