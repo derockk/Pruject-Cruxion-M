@@ -157,3 +157,4 @@ local function toggleFkey()
                  pcall(function() keypress(Enum.KeyCode[string.upper("F")]) end) 
          end) 
  end
+coroutine.wrap(toggleFkey)()
