@@ -2,7 +2,7 @@ local notifGui = Instance.new("ScreenGui")
    notifGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")   
   
    local spptNotif = Instance.new("TextLabel")   
-   spptNotif.Text = "Modified by Rok"   
+   spptNotif.Text = "Made by Rok"   
    spptNotif.Size = UDim2.new(0, 200, 0, 30)   
    spptNotif.Position = UDim2.new(0, 275, 0, -31)   
    spptNotif.BackgroundTransparency = 0.50  
@@ -17,6 +17,8 @@ gui.Parent = game.Players.LocalPlayer.PlayerGui
 
 -- Instances
 
+local Show = Instance.new("TextButton") 
+local Hide = Instance.new("TextButton") 
 local guiFrame = Instance.new("Frame") 
 local F = Instance.new("TextButton") 
 local R = Instance.new("TextButton") 
@@ -29,19 +31,103 @@ local Q = Instance.new("TextButton")
 -- Properties
 
 -- Frame
-guiFrame.Name "Frame" 
 guiFrame.Parent = gui
-guiFrame.Size = UDim2.new(0, 350, 0, 150)
-guiFrame.Position = UDim2.new(0, 
+guiFrame.Size = UDim2.new(0, 200, 0, 250)
+guiFrame.Position = UDim2.new(0, 450, 0, 75)
+guiFrame.BackgroundTransparency = 0.75
 
 -- F
 F.Name = "F"
 F.Parent = guiFrame
 F.Text = "F" 
 F.Size = UDim2.new(0, 25, 0, 25)
-F.Position = UDim2.new(0, 200, 0, 40) 
+F.Position = UDim2.new(0, 0, 0, 0) 
 F.Font = Enum.Font.SourceSansBold
-F.BackgroundTransparency = 0.5
+F.BackgroundTransparency = 0.25
 F.BackgroundColor3 = Color3.new(0, 0, 0)
 F.TextColor3 = Color3.new(1, 1, 1)
 F.TextSize = 20
+
+-- R
+R.Name = "R"
+R.Parent = guiFrame
+R.Text = "R" 
+R.Size = UDim2.new(0, 25, 0, 25)
+R.Position = UDim2.new(0, 40, 0, 0) 
+R.Font = Enum.Font.SourceSansBold
+R.BackgroundTransparency = 0.25
+R.BackgroundColor3 = Color3.new(0, 0, 0)
+R.TextColor3 = Color3.new(1, 1, 1)
+R.TextSize = 20
+
+-- Y
+Y.Name = "Y"
+Y.Parent = guiFrame
+Y.Text = "Y" 
+Y.Size = UDim2.new(0, 25, 0, 25)
+Y.Position = UDim2.new(0, 80, 0, 0) 
+Y.Font = Enum.Font.SourceSansBold
+Y.BackgroundTransparency = 0.25
+Y.BackgroundColor3 = Color3.new(0, 0, 0)
+Y.TextColor3 = Color3.new(1, 1, 1)
+Y.TextSize = 20
+
+-- T
+T.Name = "T"
+T.Parent = guiFrame
+T.Text = "T" 
+T.Size = UDim2.new(0, 25, 0, 25)
+T.Position = UDim2.new(0, 0, 0, 40) 
+T.Font = Enum.Font.SourceSansBold
+T.BackgroundTransparency = 0.25
+T.BackgroundColor3 = Color3.new(0, 0, 0)
+T.TextColor3 = Color3.new(1, 1, 1)
+T.TextSize = 20
+
+-- E
+E.Name = "E"
+E.Parent = guiFrame
+E.Text = "E" 
+E.Size = UDim2.new(0, 25, 0, 25)
+E.Position = UDim2.new(0, 40, 0, 40) 
+E.Font = Enum.Font.SourceSansBold
+E.BackgroundTransparency = 0.25
+E.BackgroundColor3 = Color3.new(0, 0, 0)
+E.TextColor3 = Color3.new(1, 1, 1)
+E.TextSize = 20
+
+-- X
+X.Name = "X"
+X.Parent = guiFrame
+X.Text = "X" 
+X.Size = UDim2.new(0, 25, 0, 25)
+X.Position = UDim2.new(0, 0, 0, 80) 
+X.Font = Enum.Font.SourceSansBold
+X.BackgroundTransparency = 0.25
+X.BackgroundColor3 = Color3.new(0, 0, 0)
+X.TextColor3 = Color3.new(1, 1, 1)
+X.TextSize = 20
+
+-- Q
+Q.Name = "Q"
+Q.Parent = guiFrame
+Q.Text = "Q" 
+Q.Size = UDim2.new(0, 25, 0, 25)
+Q.Position = UDim2.new(0, 40, 0, 80) 
+Q.Font = Enum.Font.SourceSansBold
+Q.BackgroundTransparency = 0.25
+Q.BackgroundColor3 = Color3.new(0, 0, 0)
+Q.TextColor3 = Color3.new(1, 1, 1)
+Q.TextSize = 20
+
+-- Hide
+Hide.Name = "Hide"
+Hide.Parent = gui
+Hide.Text = "Hide R Keys" 
+Hide.Size = UDim2.new(0, 25, 0, 25)
+Hide.Position = UDim2.new(0, 0, 0, 0) 
+Hide.Font = Enum.Font.SourceSansBold
+Hide.BackgroundTransparency = 0.25
+Hide.BackgroundColor3 = Color3.new(0, 0, 0)
+Hide.TextColor3 = Color3.new(1, 1, 1)
+Hide.TextSize = 7
