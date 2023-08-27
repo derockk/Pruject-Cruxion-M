@@ -27,6 +27,17 @@ local T = Instance.new("TextButton")
 local E = Instance.new("TextButton") 
 local X = Instance.new("TextButton") 
 local Q = Instance.new("TextButton") 
+local H = Instance.new("TextButton") 
+local Z = Instance.new("TextButton") 
+local U = Instance.new("TextButton") 
+local V = Instance.new("TextButton") 
+local J = Instance.new("TextButton") 
+local C = Instance.new("TextButton") 
+local B = Instance.new("TextButton") 
+local G = Instance.new("TextButton") 
+local P = Instance.new("TextButton") 
+local N = Instance.new("TextButton") 
+local M = Instance.new("TextButton") 
 
 -- Properties
 
@@ -176,6 +187,72 @@ J.BackgroundColor3 = Color3.new(0, 0, 0)
 J.TextColor3 = Color3.new(1, 1, 1)
 J.TextSize = 20
 
+C.Name = "C"
+C.Parent = guiFrame
+C.Text = "C" 
+C.Size = UDim2.new(0, 25, 0, 25)
+C.Position = UDim2.new(0, 0, 0, 0) 
+C.Font = Enum.Font.SourceSansBold
+C.BackgroundTransparency = 0.25
+C.BackgroundColor3 = Color3.new(0, 0, 0)
+C.TextColor3 = Color3.new(1, 1, 1)
+C.TextSize = 20
+
+B.Name = "B"
+B.Parent = guiFrame
+B.Text = "B" 
+B.Size = UDim2.new(0, 25, 0, 25)
+B.Position = UDim2.new(0, 0, 0, 0) 
+B.Font = Enum.Font.SourceSansBold
+B.BackgroundTransparency = 0.25
+B.BackgroundColor3 = Color3.new(0, 0, 0)
+B.TextColor3 = Color3.new(1, 1, 1)
+B.TextSize = 20
+
+G.Name = "G"
+G.Parent = guiFrame
+G.Text = "G" 
+G.Size = UDim2.new(0, 25, 0, 25)
+G.Position = UDim2.new(0, 0, 0, 0) 
+G.Font = Enum.Font.SourceSansBold
+G.BackgroundTransparency = 0.25
+G.BackgroundColor3 = Color3.new(0, 0, 0)
+G.TextColor3 = Color3.new(1, 1, 1)
+G.TextSize = 20
+
+P.Name = "P"
+P.Parent = guiFrame
+P.Text = "P" 
+P.Size = UDim2.new(0, 25, 0, 25)
+P.Position = UDim2.new(0, 0, 0, 0) 
+P.Font = Enum.Font.SourceSansBold
+P.BackgroundTransparency = 0.25
+P.BackgroundColor3 = Color3.new(0, 0, 0)
+P.TextColor3 = Color3.new(1, 1, 1)
+P.TextSize = 20
+
+N.Name = "N"
+N.Parent = guiFrame
+N.Text = "N" 
+N.Size = UDim2.new(0, 25, 0, 25)
+N.Position = UDim2.new(0, 0, 0, 0) 
+N.Font = Enum.Font.SourceSansBold
+N.BackgroundTransparency = 0.25
+N.BackgroundColor3 = Color3.new(0, 0, 0)
+N.TextColor3 = Color3.new(1, 1, 1)
+N.TextSize = 20
+
+M.Name = "M"
+M.Parent = guiFrame
+M.Text = "M" 
+M.Size = UDim2.new(0, 25, 0, 25)
+M.Position = UDim2.new(0, 0, 0, 0) 
+M.Font = Enum.Font.SourceSansBold
+M.BackgroundTransparency = 0.25
+M.BackgroundColor3 = Color3.new(0, 0, 0)
+M.TextColor3 = Color3.new(1, 1, 1)
+M.TextSize = 20
+
 -- Hide
 Hide.Name = "Hide"
 Hide.Parent = guiFrame
@@ -274,6 +351,116 @@ local function toggleQkey()
          end) 
  end
 coroutine.wrap(toggleQkey)()
+
+-- H
+local function toggleHkey() 
+        local script = Instance.new('Script', H) 
+  
+         script.Parent.MouseButton1Click:Connect(function() 
+                 pcall(function() keypress(Enum.KeyCode[string.upper("H")]) end) 
+         end) 
+ end
+coroutine.wrap(toggleHkey)()
+
+-- Z
+local function toggleZkey() 
+        local script = Instance.new('Script', Z) 
+  
+         script.Parent.MouseButton1Click:Connect(function() 
+                 pcall(function() keypress(Enum.KeyCode[string.upper("Z")]) end) 
+         end) 
+ end
+coroutine.wrap(toggleZkey)()
+
+-- U
+local function toggleUkey() 
+        local script = Instance.new('Script', U) 
+  
+         script.Parent.MouseButton1Click:Connect(function() 
+                 pcall(function() keypress(Enum.KeyCode[string.upper("U")]) end) 
+         end) 
+ end
+coroutine.wrap(toggleUkey)()
+
+-- V
+local function toggleVkey() 
+        local script = Instance.new('Script', V) 
+  
+         script.Parent.MouseButton1Click:Connect(function() 
+                 pcall(function() keypress(Enum.KeyCode[string.upper("V")]) end) 
+         end) 
+ end
+coroutine.wrap(toggleVkey)()
+
+-- J
+local function toggleJkey() 
+        local script = Instance.new('Script', J) 
+  
+         script.Parent.MouseButton1Click:Connect(function() 
+                 pcall(function() keypress(Enum.KeyCode[string.upper("J")]) end) 
+         end) 
+ end
+coroutine.wrap(toggleJkey)()
+
+-- C
+local function toggleCkey() 
+        local script = Instance.new('Script', C) 
+  
+         script.Parent.MouseButton1Click:Connect(function() 
+                 pcall(function() keypress(Enum.KeyCode[string.upper("C")]) end) 
+         end) 
+ end
+coroutine.wrap(toggleCkey)()
+
+-- B
+local function toggleBkey() 
+        local script = Instance.new('Script', B) 
+  
+         script.Parent.MouseButton1Click:Connect(function() 
+                 pcall(function() keypress(Enum.KeyCode[string.upper("B")]) end) 
+         end) 
+ end
+coroutine.wrap(toggleBkey)()
+
+-- G
+local function toggleGkey() 
+        local script = Instance.new('Script', G) 
+  
+         script.Parent.MouseButton1Click:Connect(function() 
+                 pcall(function() keypress(Enum.KeyCode[string.upper("G")]) end) 
+         end) 
+ end
+coroutine.wrap(toggleGkey)()
+
+-- P
+local function togglePkey() 
+        local script = Instance.new('Script', P) 
+  
+         script.Parent.MouseButton1Click:Connect(function() 
+                 pcall(function() keypress(Enum.KeyCode[string.upper("P")]) end) 
+         end) 
+ end
+coroutine.wrap(togglePkey)()
+
+-- N
+local function toggleNkey() 
+        local script = Instance.new('Script', N) 
+  
+         script.Parent.MouseButton1Click:Connect(function() 
+                 pcall(function() keypress(Enum.KeyCode[string.upper("N")]) end) 
+         end) 
+ end
+coroutine.wrap(toggleNkey)()
+
+-- M
+local function toggleMkey() 
+        local script = Instance.new('Script', M) 
+  
+         script.Parent.MouseButton1Click:Connect(function() 
+                 pcall(function() keypress(Enum.KeyCode[string.upper("M")]) end) 
+         end) 
+ end
+coroutine.wrap(toggleMkey)()
 
 -- Hide
 local function hideRkeys()
