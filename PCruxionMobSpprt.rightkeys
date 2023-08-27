@@ -121,6 +121,61 @@ Q.BackgroundColor3 = Color3.new(0, 0, 0)
 Q.TextColor3 = Color3.new(1, 1, 1)
 Q.TextSize = 20
 
+H.Name = "H"
+H.Parent = guiFrame
+H.Text = "H" 
+H.Size = UDim2.new(0, 25, 0, 25)
+H.Position = UDim2.new(0, 0, 0, 0) 
+H.Font = Enum.Font.SourceSansBold
+H.BackgroundTransparency = 0.25
+H.BackgroundColor3 = Color3.new(0, 0, 0)
+H.TextColor3 = Color3.new(1, 1, 1)
+H.TextSize = 20
+
+Z.Name = "Z"
+Z.Parent = guiFrame
+Z.Text = "Z" 
+Z.Size = UDim2.new(0, 25, 0, 25)
+Z.Position = UDim2.new(0, 0, 0, 0) 
+Z.Font = Enum.Font.SourceSansBold
+Z.BackgroundTransparency = 0.25
+Z.BackgroundColor3 = Color3.new(0, 0, 0)
+Z.TextColor3 = Color3.new(1, 1, 1)
+Z.TextSize = 20
+
+U.Name = "U"
+U.Parent = guiFrame
+U.Text = "U" 
+U.Size = UDim2.new(0, 25, 0, 25)
+U.Position = UDim2.new(0, 0, 0, 0) 
+U.Font = Enum.Font.SourceSansBold
+U.BackgroundTransparency = 0.25
+U.BackgroundColor3 = Color3.new(0, 0, 0)
+U.TextColor3 = Color3.new(1, 1, 1)
+U.TextSize = 20
+
+V.Name = "V"
+V.Parent = guiFrame
+V.Text = "V" 
+V.Size = UDim2.new(0, 25, 0, 25)
+V.Position = UDim2.new(0, 0, 0, 0) 
+V.Font = Enum.Font.SourceSansBold
+V.BackgroundTransparency = 0.25
+V.BackgroundColor3 = Color3.new(0, 0, 0)
+V.TextColor3 = Color3.new(1, 1, 1)
+V.TextSize = 20
+
+J.Name = "J"
+J.Parent = guiFrame
+J.Text = "J" 
+J.Size = UDim2.new(0, 25, 0, 25)
+J.Position = UDim2.new(0, 0, 0, 0) 
+J.Font = Enum.Font.SourceSansBold
+J.BackgroundTransparency = 0.25
+J.BackgroundColor3 = Color3.new(0, 0, 0)
+J.TextColor3 = Color3.new(1, 1, 1)
+J.TextSize = 20
+
 -- Hide
 Hide.Name = "Hide"
 Hide.Parent = guiFrame
