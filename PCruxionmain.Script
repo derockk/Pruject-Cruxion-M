@@ -20,12 +20,19 @@ local Run = Instance.new("TextButton")
 local Walk = Instance.new("TextButton") 
 -- Script Info
 local SInfo = Instance.new("TextButton") 
+local SIExit = Instance.new("TextButton") 
 local InfoFrame = Instance.new("Frame") 
 local SNInfo = Instance.new("TextLabel") 
 local STInfo = Instance.new("TextLabel")
 local SOInfo = Instance.new("TextLabel")
 -- Script Hub
 local SHub = Instance.new("TextButton") 
+local SHExit = Instance.new("TextButton") 
+local SHExit2 = Instance.new("TextButton") 
+local NextPage = Instance.new("TextButton") 
+local PrevPage = Instance.new("TextButton") 
+local NextPage2 = Instance.new("TextButton") 
+local PrevButton2 = Instance.new("TextButton") 
 local SHFrame = Instance.new("Frame") 
 local SPage1 = Instance.new("TextLabel") 
 local SPage2 = Instance.new("TextLabel")
@@ -43,6 +50,22 @@ local S9 = Instance.new("TextButton")
 local S10 = Instance.new("TextButton") 
 local S11 = Instance.new("TextButton") 
 
--- Properties 
-
-
+-- Properties
+ 
+-- Run/Sprint
+ Run.Text = "Run"  
+  Run.Size = UDim2.new(0, 35, 0, 35)  
+  Run.Position = UDim2.new(0, 600, 0, 40)   
+  Run.BackgroundColor3 = Color3.new(0, 0, 0)  
+  Run.TextColor3 = Color3.new(1, 1, 1)  
+  Run.BackgroundTransparency = 0.50 
+  Run.Parent = gui 
+-- Walk
+ Walk.Text = "Walk"  
+  Walk.Size = UDim2.new(0, 35, 0, 35)  
+  Walk.Position = UDim2.new(0, 600, 0, 40)  
+  Walk.BackgroundColor3 = Color3.new(0, 0, 0)  
+  Walk.TextColor3 = Color3.new(1, 1, 1)  
+  Walk.BackgroundTransparency = 0.50 
+ Walk.Visible = false 
+  Walk.Parent = gui 
