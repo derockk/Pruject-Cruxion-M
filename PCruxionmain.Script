@@ -23,6 +23,7 @@ local SInfo = Instance.new("TextButton")
 local SIExit = Instance.new("TextButton") 
 local InfoFrame = Instance.new("Frame") 
 local SNInfo = Instance.new("TextLabel") 
+local SUThxInfo = Instance.new("TextLabel") 
 local STInfo = Instance.new("TextLabel")
 local SOInfo = Instance.new("TextLabel")
 -- Script Hub
@@ -33,7 +34,9 @@ local NextPage = Instance.new("TextButton")
 local PrevPage = Instance.new("TextButton") 
 local NextPage2 = Instance.new("TextButton") 
 local PrevButton2 = Instance.new("TextButton") 
-local SHFrame = Instance.new("Frame") 
+local SHFrame1 = Instance.new("Frame")
+local SHFrame2 = Instance.new("Frame") 
+local SHTFrame = Instance.new("Frame") 
 local SPage1 = Instance.new("TextLabel") 
 local SPage2 = Instance.new("TextLabel")
 local C1 = Instance.new("TextButton") 
@@ -83,5 +86,50 @@ local S11 = Instance.new("TextButton")
   InfoFrame.BackgroundColor3 = Color3.new(0, 0, 0)  
   InfoFrame.BackgroundTransparency = 0.50 
   InfoFrame.Visible = false  
-  InfoFrame.Parent = gui 
+  InfoFrame.Parent = gui
 -- Script Info Exit TextButton
+ SIExit.Text = "Close"  
+  SIExit.Size = UDim2.new(0, 100, 0, 30)  
+  SIExit.Position = UDim2.new(0, 105, 0, -31)  
+  SIExit.BackgroundColor3 = Color3.new(0, 0, 0)  
+  SIExit.TextColor3 = Color3.new(1, 1, 1)  
+  SIExit.BackgroundTransparency = 0.50   
+  SIExit.Parent = InfoFrame
+-- Script Name In Script Info
+  SNInfo.Text = "Pruject/Cruxion:M"  
+  SNInfo.Size = UDim2.new(0, 100, 0, 30)  
+  SNInfo.BackgroundTransparency = 1  
+  SNInfo.TextColor3 = Color3.new(1, 1, 1)  
+  SNInfo.Font = Enum.Font.SourceSansBold  
+  SNInfo.FontSize = Enum.FontSize.Size24  
+  SNInfo.Position = UDim2.new(0, 0, 0, 0)  
+  SNInfo.Parent = InfoFrame 
+-- Thank You
+  SUThxInfo.Text = "Thank you for using Pruject/Cruxion:M 😈"  
+  SUThxInfo.Size = UDim2.new(0, 100, 0, 30)  
+  SUThxInfo.BackgroundTransparency = 1  
+  SUThxInfo.TextColor3 = Color3.new(1, 1, 1)  
+  SUThxInfo.Font = Enum.Font.SourceSansBold  
+  SUThxInfo.FontSize = Enum.FontSize.Size24  
+  SUThxInfo.Position = UDim2.new(0, 0, 0, 60)  
+  SUThxInfo.Parent = InfoFrame 
+-- Text 1
+ STInfo.Text = "⚠ There may be some bugs in the script but you'll get a hang of it 💀"  
+  STInfo.Size = UDim2.new(0, 100, 0, 30)  
+  STInfo.BackgroundTransparency = 1  
+  STInfo.TextColor3 = Color3.new(1, 1, 1)  
+  STInfo.Font = Enum.Font.SourceSansBold  
+  STInfo.FontSize = Enum.FontSize.Size24  
+  STInfo.Position =UDim2.new(0, 0, 0, 90)  
+  STInfo.Parent = InfoFrame
+-- Developed by
+ SOInfo.Text = "Made by Discord AI Chatbot Clyde, Rok, Credits to the other Script Owners or Devs for the copy and pasted scripts"  
+  SOInfo.Size = UDim2.new(1, 0, 1, 0)  
+  SOInfo.BackgroundTransparency = 1  
+  SOInfo.TextColor3 = Color3.new(215, 30, 30)  
+  SOInfo.Font = Enum.Font.SourceSansBold  
+  SOInfo.FontSize = Enum.FontSize.Size10  
+  SOInfo.Position = UDim2.new(0, -120, 0, 120)  
+  SOInfo.Parent = InfoFrame
+-- Script Hub
+ 
