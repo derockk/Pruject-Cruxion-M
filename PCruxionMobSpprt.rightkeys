@@ -34,7 +34,7 @@ local Q = Instance.new("TextButton")
 guiFrame.Parent = gui
 guiFrame.Size = UDim2.new(0, 200, 0, 250)
 guiFrame.Position = UDim2.new(0, 450, 0, 75)
-guiFrame.BackgroundTransparency = 0.75
+guiFrame.BackgroundTransparency =0.75
 
 -- F
 F.Name = "F"
@@ -158,3 +158,80 @@ local function toggleFkey()
          end) 
  end
 coroutine.wrap(toggleFkey)()
+
+-- R
+local function toggleRkey() 
+        local script = Instance.new('Script', R) 
+  
+         script.Parent.MouseButton1Click:Connect(function() 
+                 pcall(function() keypress(Enum.KeyCode[string.upper("R")]) end) 
+         end) 
+ end
+coroutine.wrap(toggleRkey)()
+
+-- Y
+local function toggleYkey() 
+        local script = Instance.new('Script', Y) 
+  
+         script.Parent.MouseButton1Click:Connect(function() 
+                 pcall(function() keypress(Enum.KeyCode[string.upper("Y")]) end) 
+         end) 
+ end
+coroutine.wrap(toggleYkey)()
+
+-- T
+local function toggleTkey() 
+        local script = Instance.new('Script', T) 
+  
+         script.Parent.MouseButton1Click:Connect(function() 
+                 pcall(function() keypress(Enum.KeyCode[string.upper("T")]) end) 
+         end) 
+ end
+coroutine.wrap(toggleTkey)()
+
+-- E
+local function toggleEkey() 
+        local script = Instance.new('Script', E) 
+  
+         script.Parent.MouseButton1Click:Connect(function() 
+                 pcall(function() keypress(Enum.KeyCode[string.upper("E")]) end) 
+         end) 
+ end
+coroutine.wrap(toggleEkey)()
+
+-- X
+local function toggleXkey() 
+        local script = Instance.new('Script', X) 
+  
+         script.Parent.MouseButton1Click:Connect(function() 
+                 pcall(function() keypress(Enum.KeyCode[string.upper("X")]) end) 
+         end) 
+ end
+coroutine.wrap(toggleXkey)()
+
+-- Q
+local function toggleQkey() 
+        local script = Instance.new('Script', Q) 
+  
+         script.Parent.MouseButton1Click:Connect(function() 
+                 pcall(function() keypress(Enum.KeyCode[string.upper("Q")]) end) 
+         end) 
+ end
+coroutine.wrap(toggleQkey)()
+
+-- Hide
+local function hideRkeys()
+guiFrame.Visible = false
+Show.Visible = true
+
+Hide.MouseButton1Click:Connect(hideRkeys)
+end
+
+-- Show
+local function showRkeys() 
+guiFrame.Visible = true
+Show.Visible = false
+Hide.Visible = true
+
+Show.MouseButton1Click:Connect(showRkeys)
+end
