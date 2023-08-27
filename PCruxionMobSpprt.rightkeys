@@ -32,8 +32,8 @@ local Q = Instance.new("TextButton")
 
 -- Frame
 guiFrame.Parent = gui
-guiFrame.Size = UDim2.new(0, 200, 0, 250)
-guiFrame.Position = UDim2.new(0, 450, 0, 75)
+guiFrame.Size = UDim2.new(0, 200, 0, 175)
+guiFrame.Position = UDim2.new(0, 450, 0, 150)
 guiFrame.BackgroundTransparency =0.75
 guiFrame.Visible = true
 
@@ -42,7 +42,7 @@ F.Name = "F"
 F.Parent = guiFrame
 F.Text = "F" 
 F.Size = UDim2.new(0, 25, 0, 25)
-F.Position = UDim2.new(0, 0, 0, 0) 
+F.Position = UDim2.new(0, 20, 0, 20) 
 F.Font = Enum.Font.SourceSansBold
 F.BackgroundTransparency = 0.25
 F.BackgroundColor3 = Color3.new(0, 0, 0)
@@ -54,7 +54,7 @@ R.Name = "R"
 R.Parent = guiFrame
 R.Text = "R" 
 R.Size = UDim2.new(0, 25, 0, 25)
-R.Position = UDim2.new(0, 40, 0, 0) 
+R.Position = UDim2.new(0, 80, 0, 10) 
 R.Font = Enum.Font.SourceSansBold
 R.BackgroundTransparency = 0.25
 R.BackgroundColor3 = Color3.new(0, 0, 0)
@@ -66,7 +66,7 @@ Y.Name = "Y"
 Y.Parent = guiFrame
 Y.Text = "Y" 
 Y.Size = UDim2.new(0, 25, 0, 25)
-Y.Position = UDim2.new(0, 80, 0, 0) 
+Y.Position = UDim2.new(0, 120, 0, 20) 
 Y.Font = Enum.Font.SourceSansBold
 Y.BackgroundTransparency = 0.25
 Y.BackgroundColor3 = Color3.new(0, 0, 0)
@@ -78,7 +78,7 @@ T.Name = "T"
 T.Parent = guiFrame
 T.Text = "T" 
 T.Size = UDim2.new(0, 25, 0, 25)
-T.Position = UDim2.new(0, 0, 0, 40) 
+T.Position = UDim2.new(0, 20, 0, 80) 
 T.Font = Enum.Font.SourceSansBold
 T.BackgroundTransparency = 0.25
 T.BackgroundColor3 = Color3.new(0, 0, 0)
@@ -90,7 +90,7 @@ E.Name = "E"
 E.Parent = guiFrame
 E.Text = "E" 
 E.Size = UDim2.new(0, 25, 0, 25)
-E.Position = UDim2.new(0, 40, 0, 40) 
+E.Position = UDim2.new(0, 60, 0, 60) 
 E.Font = Enum.Font.SourceSansBold
 E.BackgroundTransparency = 0.25
 E.BackgroundColor3 = Color3.new(0, 0, 0)
@@ -102,7 +102,7 @@ X.Name = "X"
 X.Parent = guiFrame
 X.Text = "X" 
 X.Size = UDim2.new(0, 25, 0, 25)
-X.Position = UDim2.new(0, 0, 0, 80) 
+X.Position = UDim2.new(0, 20, 0, 140) 
 X.Font = Enum.Font.SourceSansBold
 X.BackgroundTransparency = 0.25
 X.BackgroundColor3 = Color3.new(0, 0, 0)
@@ -114,7 +114,7 @@ Q.Name = "Q"
 Q.Parent = guiFrame
 Q.Text = "Q" 
 Q.Size = UDim2.new(0, 25, 0, 25)
-Q.Position = UDim2.new(0, 40, 0, 80) 
+Q.Position = UDim2.new(0, 60, 0, 120) 
 Q.Font = Enum.Font.SourceSansBold
 Q.BackgroundTransparency = 0.25
 Q.BackgroundColor3 = Color3.new(0, 0, 0)
@@ -126,7 +126,7 @@ Hide.Name = "Hide"
 Hide.Parent = guiFrame
 Hide.Text = "Hide R Keys" 
 Hide.Size = UDim2.new(0, 25, 0, 25)
-Hide.Position = UDim2.new(0, 0, 0, 100) 
+Hide.Position = UDim2.new(0, 160, 0, 150) 
 Hide.Font = Enum.Font.SourceSansBold
 Hide.BackgroundTransparency = 0.25
 Hide.BackgroundColor3 = Color3.new(0, 0, 0)
@@ -136,7 +136,7 @@ Hide.TextSize = 7
 
 -- Show
 Show.Name = "Show"
-Show.Parent = guiFrame 
+Show.Parent = gui 
 Show.Text = "Show R Keys" 
 Show.Size = UDim2.new(0, 25, 0, 25)
 Show.Position = UDim2.new(0, 0, 0, 0) 
@@ -227,6 +227,7 @@ Show.Visible = true
 
 Hide.MouseButton1Click:Connect(hideRkeys)
 end
+coroutine.wrap(hideRkeys)() 
 
 -- Show
 local function showRkeys() 
@@ -235,3 +236,4 @@ Show.Visible = false
 
 Show.MouseButton1Click:Connect(showRkeys)
 end
+coroutine.wrap(showRkeys)() 
