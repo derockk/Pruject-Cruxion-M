@@ -150,6 +150,7 @@ Show.Visible = False
 -- Scripts
 
 -- F
+local function toggleFkey() 
         local script = Instance.new('Script', F) 
   
          script.Parent.MouseButton1Click:Connect(function() 
