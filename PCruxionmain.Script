@@ -78,4 +78,10 @@ local S11 = Instance.new("TextButton")
   Sinfo.BackgroundTransparency = 0.5 
   SInfo.Parent = gui 
 -- Script Info Frame
-
+ InfoFrame.Size = UDim2.new(0, 600, 0, 250)  
+  InfoFrame.Position = UDim2.new(0, 20, 0, 25)  
+  InfoFrame.BackgroundColor3 = Color3.new(0, 0, 0)  
+  InfoFrame.BackgroundTransparency = 0.50 
+  InfoFrame.Visible = false  
+  InfoFrame.Parent = gui 
+-- Script Info Exit TextButton
