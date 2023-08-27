@@ -69,3 +69,13 @@ local S11 = Instance.new("TextButton")
   Walk.BackgroundTransparency = 0.50 
  Walk.Visible = false 
   Walk.Parent = gui 
+-- Script Info TextButton Name
+  SInfo.Text = "P/C:M"  
+  SInfo.Size = UDim2.new(0, 100, 0, 30)  
+  SInfo.Position = UDim2.new(0, 105, 0, -31)  
+  SInfo.BackgroundColor3 = Color3.new(0, 0, 0)  
+  SInfo.TextColor3 = Color3.new(1, 1, 1)  
+  Sinfo.BackgroundTransparency = 0.5 
+  SInfo.Parent = gui 
+-- Script Info Frame
+
