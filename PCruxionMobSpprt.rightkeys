@@ -32,7 +32,7 @@ local Q = Instance.new("TextButton")
 
 -- Frame
 guiFrame.Parent = gui
-guiFrame.Size = UDim2.new(0, 200, 0, 250)
+guiFrame.Size = UDim2.new(0, 200, 0, 150)
 guiFrame.Position = UDim2.new(0, 450, 0, 75)
 guiFrame.BackgroundTransparency =0.75
 guiFrame.Visible = true
@@ -136,7 +136,7 @@ Hide.TextSize = 7
 
 -- Show
 Show.Name = "Show"
-Show.Parent = guiFrame 
+Show.Parent = gui 
 Show.Text = "Show R Keys" 
 Show.Size = UDim2.new(0, 25, 0, 25)
 Show.Position = UDim2.new(0, 0, 0, 0) 
@@ -227,6 +227,7 @@ Show.Visible = true
 
 Hide.MouseButton1Click:Connect(hideRkeys)
 end
+coroutine.wrap(hideRkeys)() 
 
 -- Show
 local function showRkeys() 
@@ -235,3 +236,4 @@ Show.Visible = false
 
 Show.MouseButton1Click:Connect(showRkeys)
 end
+coroutine.wrap(showRkeys)() 
