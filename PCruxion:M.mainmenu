@@ -1,6 +1,10 @@
 local gui = Instance.new("ScreenGui") 
  gui.Parent = game.Players.LocalPlayer.PlayerGui 
 
+gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui") 
+ gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling 
+ gui.ResetOnSpawn = false
+
 local windowFrame = Instance.new("Frame") 
 windowFrame.Size = UDim2.new(0, 500, 0, 250)
 windowFrame.Position = UDim2.new(0, 75, 0, 50)
