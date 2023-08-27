@@ -9,11 +9,16 @@ local notifGui = Instance.new("ScreenGui")
    spptNotif.BackgroundColor3 = Color3.new(0, 0, 0)   
    spptNotif.TextColor3 = Color3.new(1, 1, 1)   
    spptNotif.Parent = notifGui   
-   spptNotif.Visible = true  
+   spptNotif.Visible = true
+wait(3)  
  spptNotif.Visible = false 
 
 local gui = Instance.new("ScreenGui")
 gui.Parent = game.Players.LocalPlayer.PlayerGui
+
+gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui") 
+ gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling 
+ gui.ResetOnSpawn = false
 
 -- Instances
 
