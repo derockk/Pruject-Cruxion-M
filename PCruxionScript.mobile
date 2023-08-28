@@ -490,7 +490,7 @@ local soundId = "rbxassetid://1053296915"
   end 
   
  local optionButton8 = Instance.new("TextButton")  
-  optionButton8.Text = "Shiftlock (buggy)"  
+  optionButton8.Text = "Games MobSupport"  
   optionButton8.Size = UDim2.new(0, 180, 0, 20)  
   optionButton8.Position = UDim2.new(0, 10, 0, 230)  
   optionButton8.BackgroundColor3 = Color3.new(139/255, 22/255, 22/255)
@@ -501,7 +501,7 @@ local soundId = "rbxassetid://1053296915"
   optionButton8.Parent = menuOptions  
   
   local function enableScript8()  
-      loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Universal-Shift-Lock-6655"))() 
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/derockk/Pruject-Cruxion-M/main/PCruxionMobSpprt.rightkeys"))() 
   
  local soundId = "rbxassetid://1053296915"
     local sound = Instance.new("Sound")
