@@ -80,7 +80,11 @@ wait()
 enableka.Visible = false
 disableka.Visible = true
 
-local function disablekilla()  
+local function disablekilla()
+enableka.Visible = true
+disableka.Visible = false
+  
+deleteScript() 
 local killaura = true
 while true do
 
@@ -92,10 +96,6 @@ local args = {
 
 game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
 wait()
-
-unloadScript() 
-enableka.Visible = true
-disableka.Visible = false
 end
 
 enableka.MouseButton1Click:Connect(enablekilla) 
