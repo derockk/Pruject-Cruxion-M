@@ -25,4 +25,34 @@ frame.BackgroundTransparency = 0.75
 
 local Xb = Instance.new("TextButton") 
 Xb.Parent = frame
-Xb.Size = UDim2.new(0, 0, 0, 0)
+  Xb.Text = "X"   
+   Xb.Size = UDim2.new(0, 32, 0, 32)   
+   Xb.Position = UDim2.new(0, -15, 0, -15)   
+   Xb.BackgroundColor3 = Color3.new(0, 0, 0)   
+   Xb.TextColor3 = Color3.new(1, 1, 1)   
+   Xb.Font = Enum.Font.SourceSansBold   
+   Xb.FontSize = Enum.FontSize.Size24   
+   Xb.BackgroundTransparency = 0.50 
+
+local Xb = Instance.new("TextButton") 
+Xb.Parent = frame
+  Xb.Text = "Zones"   
+   Xb.Size = UDim2.new(0, 32, 0, 32)   
+   Xb.Position = UDim2.new(0, -15, 0, -15)   
+   Xb.BackgroundColor3 = Color3.new(0, 0, 0)   
+   Xb.TextColor3 = Color3.new(1, 1, 1)   
+   Xb.Font = Enum.Font.SourceSansBold   
+   Xb.FontSize = Enum.FontSize.Size24   
+   Xb.BackgroundTransparency = 0.50 
+
+local Xb = Instance.new("TextButton") 
+Xb.Parent = frame
+  Xb.Text = "Bosses"   
+   Xb.Size = UDim2.new(0, 32, 0, 32)   
+   Xb.Position = UDim2.new(0, -15, 0, -15)   
+   Xb.BackgroundColor3 = Color3.new(0, 0, 0)   
+   Xb.TextColor3 = Color3.new(1, 1, 1)   
+   Xb.Font = Enum.Font.SourceSansBold   
+   Xb.FontSize = Enum.FontSize.Size24   
+   Xb.BackgroundTransparency = 0.50 
+
