@@ -43,15 +43,45 @@ runButton.Visible = true
  runButton.Parent = gui 
 
 local enableka = Instance.new("TextButton") 
- runButton.Text = "Enable" 
- runButton.Size = UDim2.new(0, 35, 0, 35) 
- runButton.Position = UDim2.new(0, 600, 0, 40)  
- runButton.BackgroundColor3 = Color3.new(0, 0, 0) 
- runButton.TextColor3 = Color3.new(1, 1, 1) 
- runButton.BackgroundTransparency = 0.50
+ enableka.Text = "Enable" 
+ enableka.Size = UDim2.new(0, 35, 0, 35) 
+ enableka.Position = UDim2.new(0, 555, 0, 40)  
+ enableka.BackgroundColor3 = Color3.new(0, 0, 0) 
+ enableka.TextColor3 = Color3.new(1, 1, 1) 
+ enableka.BackgroundTransparency = 0.50
 enableka.TextWrapped = true
-runButton.Visible = true
- runButton.Parent = gui 
+enableka.Visible = false
+ enableka.Parent = gui 
+
+local disableka = Instance.new("TextButton") 
+ disableka.Text = "Enable" 
+ disableka.Size = UDim2.new(0, 35, 0, 35) 
+ enableka.Position = UDim2.new(0, 555, 0, 40)  
+ disableka.BackgroundColor3 = Color3.new(0, 0, 0) 
+ disableka.TextColor3 = Color3.new(1, 1, 1) 
+ disableka.BackgroundTransparency = 0.50
+disableka.TextWrapped = true
+disableka.Visible = false
+ disableka.Parent = gui 
+
+local function enablekilla()  
+local killaura = true
+while true do
+
+local args = {
+    [1] = "LMB",
+    [2] = CFrame.new(-2466.28125, 76.00406646728516, -3716.53125) * CFrame.Angles(-0, 0, -0),
+    [3] = CFrame.new(-2464.056884765625, 79.00404357910156, -3722.692138671875) * CFrame.Angles(-3.141592502593994, 0.076034776866436, -3.1415927410125732)
+}
+
+game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+wait()
+
+enableka.Visible = false
+disableka.Visible = true
+
+local function disablekilla()  
+unloadScript() 
   
  local stopButton = Instance.new("TextButton") 
  stopButton.Text = "Walk" 
@@ -537,17 +567,7 @@ local optionButton9 = Instance.new("TextButton")
   optionButton9.Parent = menuOptions2  
   
   local function enableScript9() 
-local killaura = true
-while true do
-
-local args = {
-    [1] = "LMB",
-    [2] = CFrame.new(-2466.28125, 76.00406646728516, -3716.53125) * CFrame.Angles(-0, 0, -0),
-    [3] = CFrame.new(-2464.056884765625, 79.00404357910156, -3722.692138671875) * CFrame.Angles(-3.141592502593994, 0.076034776866436, -3.1415927410125732)
-}
-
-game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
-wait()
+enableka.Visible = true
        
  local soundId = "rbxassetid://1053296915"
     local sound = Instance.new("Sound")
