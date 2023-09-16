@@ -5,7 +5,7 @@ gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
  gui.ResetOnSpawn = false
 
 local enableka = Instance.new("TextButton")
-enableka.Text = "Enable"
+enableka.Text = "/"
 enableka.Size = UDim2.new(0, 35, 0, 35)
 enableka.Position = UDim2.new(0, 600, 0, 80)
 enableka.BackgroundColor3 = Color3.new(0, 0, 0)
@@ -16,7 +16,7 @@ enableka.TextWrapped = true
 enableka.Parent = gui
 
 local disableka = Instance.new("TextButton")
-disableka.Text = "Disable"
+disableka.Text = "|"
 disableka.Size = UDim2.new(0, 35, 0, 35)
 disableka.Position = UDim2.new(0, 600, 0, 80)
 disableka.BackgroundColor3 = Color3.new(0, 0, 0)
