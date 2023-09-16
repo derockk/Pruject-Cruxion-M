@@ -41,7 +41,7 @@ enableka.Visible = true
 disableka.Visble = false
 end
 
-local function enableka()
+local function enablekilla()
 local killaura = true
 while true do
 
@@ -58,3 +58,6 @@ disableka.Visible = true
 enableka.Visible = false
 end
 
+enableka.MouseButton1Click:Connect(enablekilla) 
+
+disableka.MouseButton1Click:Connect(disablekilla) 
