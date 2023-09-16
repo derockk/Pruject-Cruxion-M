@@ -3,10 +3,19 @@ gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
   gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling  
   gui.ResetOnSpawn = false
 
+--properties
+
+local Tpm = Instance.new("TextButton") 
+Tpm.Parent = gui
+Tpm.Size
+
 local frame = Instance.new("Frame") 
-frame.Parent = gui
+frame.Parent = Tpm
 frame.Size = UDim2.new(0, 0, 0, 0)
 frame.Position = UDim2.new(0, 0, 0, 0)
 frame.BackgroundColor3 = Color3.new(0, 0, 0)
 frame.BackgroundTransparency = 0.75
-frame.TextFont
+
+local Xb = Instance.new("TextButton") 
+Xb.Parent = frame
+Xb.Size = UDim2.new(0, 0, 0, 0)
