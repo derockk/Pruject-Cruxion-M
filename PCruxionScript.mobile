@@ -26,10 +26,6 @@ local testNotif2 = Instance.new("TextLabel")
  testNotif2.Visible = false  
  testNotif2.Parent = notif 
 
- local gui = Instance.new("ScreenGui") 
- gui.Name = "NotificationGui" 
- gui.Parent = game.Players.LocalPlayer.PlayerGui 
-  
  local runButton = Instance.new("TextButton") 
  runButton.Text = "Run" 
  runButton.Size = UDim2.new(0, 35, 0, 35) 
@@ -181,10 +177,6 @@ game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = stopSpeed
   
  runButton.MouseButton1Click:Connect(run) 
  stopButton.MouseButton1Click:Connect(stopRunning) 
-  
-   local gui = Instance.new("ScreenGui")  
-  gui.Name = "MenuGui"  
-  gui.Parent = game.Players.LocalPlayer.PlayerGui  
   
   local menuButton = Instance.new("TextButton")  
   menuButton.Text = "M"  
