@@ -4,4 +4,9 @@ gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
   gui.ResetOnSpawn = false
 
 local frame = Instance.new("Frame") 
-frame.Size = UDim2.new
+frame.Parent = gui
+frame.Size = UDim2.new(0, 0, 0, 0)
+frame.Position = UDim2.new(0, 0, 0, 0)
+frame.BackgroundColor3 = Color3.new(0, 0, 0)
+frame.BackgroundTransparency = 0.75
+frame.TextFont
