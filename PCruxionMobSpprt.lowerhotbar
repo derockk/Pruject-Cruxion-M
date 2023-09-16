@@ -24,4 +24,37 @@ disableka.Text = "Disable"
 disableka.TextWrapped
   disableka.Parent = gui 
 
-local function disablekilla
+local function disablekilla() 
+-- local killaura = true
+-- while true do
+
+-- local args = {
+--     [1] = "LMB",
+--     [2] = CFrame.new(-2466.28125, 76.00406646728516, -3716.53125) * CFrame.Angles(-0, 0, -0),
+--     [3] = CFrame.new(-2464.056884765625, 79.00404357910156, -3722.692138671875) * CFrame.Angles(-3.141592502593994, 0.076034776866436, -3.1415927410125732)
+-- }
+
+-- game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+-- wait()
+
+enableka.Visible = true
+disableka.Visble = false
+end
+
+local function enableka()
+local killaura = true
+while true do
+
+local args = {
+    [1] = "LMB",
+    [2] = CFrame.new(-2466.28125, 76.00406646728516, -3716.53125) * CFrame.Angles(-0, 0, -0),
+    [3] = CFrame.new(-2464.056884765625, 79.00404357910156, -3722.692138671875) * CFrame.Angles(-3.141592502593994, 0.076034776866436, -3.1415927410125732)
+}
+
+game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+wait()
+
+disableka.Visible = true
+enableka.Visible = false
+end
+
