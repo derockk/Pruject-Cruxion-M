@@ -1,2 +1,7 @@
+local gui = Instance.new("ScreenGui")
+gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")  
+  gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling  
+  gui.ResetOnSpawn = false
 
-local gui = Instance.new("ScreenGui") 
+local frame = Instance.new("Frame") 
+frame.Size = UDim2.new
