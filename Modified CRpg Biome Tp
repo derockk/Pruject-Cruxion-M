@@ -75,7 +75,7 @@ Z2.Parent = c2
    Z2.BackgroundTransparency = 0.50 
 
 local B = Instance.new("TextButton") 
-B2.Parent = c1
+B.Parent = c1
   B.Text = "Bosses"   
    B.Size = UDim2.new(0, 60, 0, 32)   
    B.Position = UDim2.new(0, -60, 0, 79)   
