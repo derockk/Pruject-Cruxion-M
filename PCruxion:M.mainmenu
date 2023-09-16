@@ -6,7 +6,7 @@ gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
  gui.ResetOnSpawn = false
 
 local windowFrame = Instance.new("Frame") 
-windowFrame.Size = UDim2.new(0, 500, 0, 250)
+windowFrame.Size = UDim2.new(0, 400, 0, 150)
 windowFrame.Position = UDim2.new(0, 75, 0, 50)
 windowFrame.BackgroundColor3 = Color3.new(0, 0, 0)
 windowFrame.BackgroundTransparency = 0.50
@@ -14,7 +14,7 @@ windowFrame.Parent = gui
 
 local intext1 = Instance.new("TextLabel")
 intext1.Position = UDim2.new(0, 10, 0, 50)
-intext1.Size = UDim2.new(0, 480, 0, 50)
+intext1.Size = UDim2.new(0, 380, 0, 40)
 intext1.BackgroundTransparency = 1
 intext1.TextColor3 = Color3.new(1, 1, 1)
 intext1.Font = Enum.Font.SourceSansBold
@@ -35,7 +35,7 @@ logoName.Parent = windowFrame
 
 local enterButton = Instance.new("TextButton") 
 enterButton.Text = "Enter" 
-enterButton.Size = UDim2.new(0, 480, 0, 50)
+enterButton.Size = UDim2.new(0, 380, 0, 40)
 enterButton.Position = UDim2.new(0, 10, 0, 190)
 enterButton.BackgroundColor3 = Color3.new(139/255, 22/255, 22/255)
 enterButton.TextColor3 = Color3.new(1, 1, 1)
