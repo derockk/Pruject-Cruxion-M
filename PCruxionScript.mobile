@@ -1,6 +1,4 @@
 local gui = Instance.new("ScreenGui") 
- gui.Parent = game.Players.LocalPlayer.PlayerGui 
-
 gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui") 
  gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling 
  gui.ResetOnSpawn = false
