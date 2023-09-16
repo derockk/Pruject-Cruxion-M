@@ -1,0 +1,53 @@
+
+local gui = Instance.new("ScreenGui") 
+gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui") 
+ gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling 
+ gui.ResetOnSpawn = false
+
+local enableka = Instance.new("TextButton")
+enableka.Text = "Enable"
+enableka.Size = UDim2.new(0, 35, 0, 35)
+enableka.Position = UDim2.new(0, 600, 0, 80)
+enableka.BackgroundColor3 = Color3.new(0, 0, 0)
+enableka.TextColor3 = Color3.new(1, 1, 1)
+enableka.BackgroundTransparency = 0.50
+enableka.Visible = true
+enableka.TextWrapped = true
+enableka.Parent = gui
+
+local disableka = Instance.new("TextButton")
+disableka.Text = "Disable"
+disableka.Size = UDim2.new(0, 35, 0, 35)
+disableka.Position = UDim2.new(0, 600, 0, 80)
+disableka.BackgroundColor3 = Color3.new(0, 0, 0)
+disableka.TextColor3 = Color3.new(1, 1, 1)
+disableka.BackgroundTransparency = 0.50
+disableka.Visible = false
+disableka.TextWrapped = true
+disableka.Parent = gui
+
+local killaura = false
+
+local function enablekilla()
+    enableka.Visible = false
+    disableka.Visible = true
+    killaura = true
+    while killaura do
+        local args = {
+            [1] = "LMB",
+            [2] = CFrame.new(-2466.28125, 76.00406646728516, -3716.53125) * CFrame.Angles(-0, 0, -0),
+            [3] = CFrame.new(-2464.056884765625, 79.00404357910156, -3722.692138671875) * CFrame.Angles(-3.141592502593994, 0.076034776866436, -3.1415927410125732)
+        }
+        game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+        wait()
+    end
+end
+
+local function disablekilla()
+    disableka.Visible = false
+    enableka.Visible = true
+    killaura = false
+end
+
+enableka.MouseButton1Click:Connect(enablekilla)
+disableka.MouseButton1Click:Connect(disablekilla)
