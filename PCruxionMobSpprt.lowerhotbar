@@ -1,5 +1,27 @@
-local gui Instance.new("ScreenGui") 
+local gui = Instance.new("ScreenGui") 
 gui.Parent = game.Players.LocalPlayer.PlayerGui
 
-local enableka Instance.new("TextButton") 
+local enableka = Instance.new("TextButton") 
+local disableka = Instance.new("TextButton")
+  
+  enableka.Text = "Enable"  
+  enableka.Size = UDim2.new(0, 35, 0, 35)  
+  enableka.Position = UDim2.new(0, 600, 0, 80)   
+  enableka.BackgroundColor3 = Color3.new(0, 0, 0)  
+  enableka.TextColor3 = Color3.new(1, 1, 1)  
+  enableka.BackgroundTransparency = 0.50 
+ enableka.Visible = true 
+enableka.TextWrapped
+  enableka.Parent = gui 
 
+disableka.Text = "Disable"  
+  disableka.Size = UDim2.new(0, 35, 0, 35)  
+  disableka.Position = UDim2.new(0, 600, 0, 80)   
+  disableka.BackgroundColor3 = Color3.new(0, 0, 0)  
+ disableka.TextColor3 = Color3.new(1, 1, 1)  
+  disableka.BackgroundTransparency = 0.50 
+ disableka.Visible = false
+disableka.TextWrapped
+  disableka.Parent = gui 
+
+local function disablekilla
