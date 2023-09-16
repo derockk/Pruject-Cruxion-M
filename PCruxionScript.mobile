@@ -54,7 +54,7 @@ enableka.Visible = false
  enableka.Parent = gui 
 
 local disableka = Instance.new("TextButton") 
- disableka.Text = "Enable" 
+ disableka.Text = "Disable" 
  disableka.Size = UDim2.new(0, 35, 0, 35) 
  disableka.Position = UDim2.new(0, 555, 0, 40)  
  disableka.BackgroundColor3 = Color3.new(0, 0, 0) 
