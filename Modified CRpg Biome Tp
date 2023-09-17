@@ -278,4 +278,157 @@ c1.Visible = false
 c2.Visible = true
 end
 
-B.MouseButton1Click:Connect(openc2) 
+B.MouseButton1Click:Connect(openc2)
+
+local function exitc1() 
+c1.Visible = false
+Tpm.Visible = true
+end
+
+Xb.MouseButton1Click:Connect(exitc1)
+
+local function exitc2()
+c2.Visible = false
+Tpm.Visible = true
+end
+
+Xb2.MouseButton1Click:Connect(exitc2)
+
+local function tprt() 
+x=-2367
+y=79
+z=-3731
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+end
+
+rt.MouseButton1Click:Connect(tprt)
+
+local function tpl() 
+x=-3733
+y=97
+z=1814
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+end
+
+l.MouseButton1Click:Connect(tpl)
+
+local function tpss()
+x=-2380
+y=80
+z=-3629
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+end
+
+ss.MouseButton1Click:Connect(tpss)
+
+local function tpkc() 
+x=-5318
+y=4
+z=-1784
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+end
+
+kc.MouseButton1Click:Connect(tpkc)
+
+local function tpmm()
+x=-4083
+y=14
+z=-4602
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+end
+
+mm.MouseNutton1Click:Connect(tpmm) 
+
+local function tpmf()
+x=-3800
+y=9
+z=-3300
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+end
+
+mf.MouseButton1Click:Connect(tpmf)
+
+local function tpou()
+x=-58
+y=56
+z=-8106
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+end
+
+ou.MouseButton1Click:Connect(tpou)
+
+local function tpwe()
+x=-90
+y=56
+z=-8627
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+end
+
+we.MouseButton1Click:Connect(tpwe)
+
+local function tpoa()
+x=-714
+y=66
+z=-6136
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+end
+
+oa.MouseButton1Click:Connect(tpoa)
+
+local function tpw()
+x=-1808
+y=55
+z=-2589
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+end
+
+w.MouseButton1Click:Connect(tpw)
+
+local function tpoc() 
+x=-1453
+y=-70
+z=-6031
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+end
+
+oc.MouseButton1Click:Connect(tpoc)
+
+local function tpsff() 
+x=-4943
+y=7
+z=-5421
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+
+sff.MouseButton1Click:Connect(tpsff)
+
+local function tpff()
+x=-5388
+y=21
+z=-7436
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+end
+
+ff.MouseButton1Click:Connect(tpff)
+
+local function tpshc() 
+x=1451
+y= 14
+z=-3559
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+end
+
+shc.MouseButton1Click:Connect(tpshc) 
