@@ -17,16 +17,16 @@ Tpm.Parent = gui
    Tpm.BackgroundTransparency = 0.50   
 
 local c1 = Instance.new("Frame") 
-c1.Parent = Tpm
+c1.Parent = gui
 c1.Size = UDim2.new(0, 250, 0, 225)
-c1.Position = UDim2.new(0, 100, 0, -60)
+c1.Position = UDim2.new(0, 100, 0, 20)
 c1.BackgroundColor3 = Color3.new(0, 0, 0)
 c1.BackgroundTransparency = 0.75
 
 local c2 = Instance.new("Frame") 
-c2.Parent = Tpm
+c2.Parent = gui
 c2.Size = UDim2.new(0, 250, 0, 225)
-c2.Position = UDim2.new(0, 100, 0, -60)
+c2.Position = UDim2.new(0, 100, 0, 20)
 c2.BackgroundColor3 = Color3.new(0, 0, 0)
 c2.BackgroundTransparency = 0.75
 
@@ -260,7 +260,8 @@ c2.Visible = false
 
 local function opentpm()
 c1.Visible = true
-c2.Visible = true
+c2.Visible = false
 Tpm.Visible = false
+end
 
 Tpm.MouseButton1Click:Connect(opentpm)
