@@ -175,7 +175,7 @@ sff.Parent = c1
 
 local shc = Instance.new("TextButton") 
 shc.Parent = c1
-  shc.Text = "Stoneheart Canyon"   
+  shc.Text = "Stonegate"   
    shc.Size = UDim2.new(0, 230, 0, 15)   
    shc.Position = UDim2.new(0, 10, 0, 130) 
  shc.BackgroundColor3 = Color3.new(139/255, 22/255, 22/255)
@@ -197,7 +197,7 @@ oa.Parent = c1
 
 local oc = Instance.new("TextButton") 
 oc.Parent = c1
-  oc.Text = "Oasis Cave"   
+  oc.Text = "Lost Caves"   
    oc.Size = UDim2.new(0, 230, 0, 15)   
    oc.Position = UDim2.new(0, 10, 0, 180) 
  oc.BackgroundColor3 = Color3.new(139/255, 22/255, 22/255)
@@ -342,7 +342,7 @@ z=-4602
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
 end
 
-mm.MouseNutton1Click:Connect(tpmm) 
+mm.MouseButton1Click:Connect(tpmm) 
 
 local function tpmf()
 x=-3800
@@ -410,6 +410,7 @@ y=7
 z=-5421
 
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+end
 
 sff.MouseButton1Click:Connect(tpsff)
 
