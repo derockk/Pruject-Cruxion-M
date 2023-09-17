@@ -74,13 +74,14 @@ stopButton.Visible = false
  textLabel.Parent = window 
   
  local textLabel = Instance.new("TextLabel") 
- textLabel.Text = "⚠ There may be some bugs in the script but, you'll get a hang of it" 
+ textLabel.Text = "⚠ There may be some bugs in the script but, you'll get a hang of it, IF you ever tried to modify and take all of the credits on this script, i will find you and strangle you to death." 
  textLabel.Size = UDim2.new(1, 0, 1, 0) 
  textLabel.BackgroundTransparency = 1 
  textLabel.TextColor3 = Color3.new(1, 1, 1) 
  textLabel.Font = Enum.Font.SourceSansBold 
  textLabel.FontSize = Enum.FontSize.Size24 
- textLabel.Position =UDim2.new(0, 0, 0, 0) 
+ textLabel.Position = UDim2.new(0, 0, 0, 0)
+textLabel.TextWrapped = true
  textLabel.Parent = window 
   
  local textLabel = Instance.new("TextLabel") 
