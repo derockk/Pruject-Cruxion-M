@@ -7,9 +7,9 @@ gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 local Tpm = Instance.new("TextButton") 
 Tpm.Parent = gui
-  Tpm.Text = "Tps"   
+  Tpm.Text = "U"   
    Tpm.Size = UDim2.new(0, 32, 0, 32)   
-   Tpm.Position = UDim2.new(0, 0, 0, 84)   
+   Tpm.Position = UDim2.new(0, 15, 0, 84)   
    Tpm.BackgroundColor3 = Color3.new(0, 0, 0)   
    Tpm.TextColor3 = Color3.new(1, 1, 1)   
    Tpm.Font = Enum.Font.SourceSansBold   
