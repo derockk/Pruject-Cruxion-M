@@ -250,6 +250,17 @@ we.Parent = c2
    we.FontSize = Enum.FontSize.Size24   
    we.BackgroundTransparency = 0.75
 
+local tw = Instance.new("TextButton") 
+tw.Parent = c2
+  tw.Text = "TheWorm[Boss]"   
+   tw.Size = UDim2.new(0, 230, 0, 15)   
+   tw.Position = UDim2.new(0, 10, 0, 130) 
+ tw.BackgroundColor3 = Color3.new(139/255, 22/255, 22/255)
+   tw.TextColor3 = Color3.new(1, 1, 1)   
+   tw.Font = Enum.Font.SourceSansBold   
+   tw.FontSize = Enum.FontSize.Size24   
+   tw.BackgroundTransparency = 0.75
+
 --Visibility
 
 Tpm.Visible = true
@@ -395,9 +406,9 @@ end
 w.MouseButton1Click:Connect(tpw)
 
 local function tpoc() 
-x=-1453
+x=-731
 y=-70
-z=-6031
+z=-6063
 
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
 end
@@ -433,3 +444,13 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
 end
 
 shc.MouseButton1Click:Connect(tpshc) 
+
+local function tptw()
+x=-1453
+y=-70
+z=-6031
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+end
+
+tw.MouseButton1Click:Cknnect(tptw)
