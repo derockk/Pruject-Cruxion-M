@@ -265,3 +265,17 @@ Tpm.Visible = false
 end
 
 Tpm.MouseButton1Click:Connect(opentpm)
+
+local function openc1()
+c1.Visible = true
+c2.Visible = false
+end
+
+Z2.MouseButton1Click:Connect(openc1) 
+
+local function openc2()
+c1.Visible = false
+c2.Visible = true
+end
+
+B.MouseButton1Click:Connect(openc2) 
