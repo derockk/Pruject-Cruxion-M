@@ -540,7 +540,7 @@ disableka.MouseButton1Click:Connect(disablekilla)
   end 
 
 local optionButton10 = Instance.new("TextButton")  
-  optionButton10.Text = "Lightux"  
+  optionButton10.Text = "CRpg Tp List"  
   optionButton10.Size = UDim2.new(0, 180, 0, 20)  
   optionButton10.Position = UDim2.new(0, 10, 0, 40)  
   optionButton10.BackgroundColor3 = Color3.new(139/255, 22/255, 22/255)
@@ -551,7 +551,7 @@ local optionButton10 = Instance.new("TextButton")
   optionButton10.Parent = menuOptions2 
   
   local function enableScript10()  
-      loadstring(game:HttpGet(('https://raw.githubusercontent.com/zeuise0002/SSSWWW222/main/README.md'),true))()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/derockk/Pruject-Cruxion-M/main/Modified%20CRpg%20Biome%20Tp"))()
 
  local soundId = "rbxassetid://1053296915"
     local sound = Instance.new("Sound")
