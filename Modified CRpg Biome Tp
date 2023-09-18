@@ -46,6 +46,13 @@ c2.Position = UDim2.new(0, 100, 0, 20)
 c2.BackgroundColor3 = Color3.new(0, 0, 0)
 c2.BackgroundTransparency = 0.75
 
+local c3 = Instance.new("Frame") 
+c3.Parent = gui
+c3.Size = UDim2.new(0, 250, 0, 225)
+c3.Position = UDim2.new(0, 100, 0, 20)
+c3.BackgroundColor3 = Color3.new(0, 0, 0)
+c3.BackgroundTransparency = 0.75
+
 local Xb = Instance.new("TextButton") 
 Xb.Parent = c1
   Xb.Text = "X"   
@@ -67,6 +74,17 @@ Xb2.Parent = c2
    Xb2.Font = Enum.Font.SourceSansBold   
    Xb2.FontSize = Enum.FontSize.Size24   
    Xb2.BackgroundTransparency = 0.50 
+
+local Xb3 = Instance.new("TextButton") 
+Xb3.Parent = c3
+  Xb3.Text = "X"   
+   Xb3.Size = UDim2.new(0, 32, 0, 32)   
+   Xb3.Position = UDim2.new(0, -15, 0, -15)   
+   Xb3.BackgroundColor3 = Color3.new(0, 0, 0)   
+   Xb3.TextColor3 = Color3.new(1, 1, 1)   
+   Xb3.Font = Enum.Font.SourceSansBold   
+   Xb3.FontSize = Enum.FontSize.Size24   
+   Xb3.BackgroundTransparency = 0.50 
 
 local Z = Instance.new("TextButton")
 Z.Parent = c1
@@ -90,6 +108,17 @@ Z2.Parent = c2
    Z2.FontSize = Enum.FontSize.Size24   
    Z2.BackgroundTransparency = 0.50 
 
+local Z3 = Instance.new("TextButton")
+Z3.Parent = c3
+  Z3.Text = "Zones"   
+   Z3.Size = UDim2.new(0, 60, 0, 32)   
+   Z3.Position = UDim2.new(0, -60, 0, 37)   
+   Z3.BackgroundColor3 = Color3.new(0, 0, 0)   
+   Z3.TextColor3 = Color3.new(1, 1, 1)   
+   Z3.Font = Enum.Font.SourceSansBold   
+   Z3.FontSize = Enum.FontSize.Size24   
+   Z3.BackgroundTransparency = 0.50 
+
 local B = Instance.new("TextButton") 
 B.Parent = c1
   B.Text = "Bosses"   
@@ -111,6 +140,50 @@ B2.Parent = c2
    B2.Font = Enum.Font.SourceSansBold   
    B2.FontSize = Enum.FontSize.Size24   
    B2.BackgroundTransparency = 0.50 
+
+local B3 = Instance.new("TextButton") 
+B3.Parent = c3
+  B3.Text = "Bosses"   
+   B3.Size = UDim2.new(0, 60, 0, 32)   
+   B3.Position = UDim2.new(0, -60, 0, 79)   
+   B3.BackgroundColor3 = Color3.new(0, 0, 0)   
+   B3.TextColor3 = Color3.new(1, 1, 1)   
+   B3.Font = Enum.Font.SourceSansBold   
+   B3.FontSize = Enum.FontSize.Size24   
+   B3.BackgroundTransparency = 0.50 
+
+local S = Instance.new("TextButton") 
+S.Parent = c1
+  S.Text = "Summon"   
+   S.Size = UDim2.new(0, 60, 0, 32)   
+   S.Position = UDim2.new(0, -60, 0, 121)   
+   S.BackgroundColor3 = Color3.new(0, 0, 0)   
+   S.TextColor3 = Color3.new(1, 1, 1)   
+   S.Font = Enum.Font.SourceSansBold   
+   S.FontSize = Enum.FontSize.Size24   
+   S.BackgroundTransparency = 0.50 
+
+local S2 = Instance.new("TextButton") 
+S2.Parent = c2
+  S2.Text = "Summon"   
+   S2.Size = UDim2.new(0, 60, 0, 32)   
+   S2.Position = UDim2.new(0, -60, 0, 121)   
+   S2.BackgroundColor3 = Color3.new(0, 0, 0)   
+   S2.TextColor3 = Color3.new(1, 1, 1)   
+   S2.Font = Enum.Font.SourceSansBold   
+   S2.FontSize = Enum.FontSize.Size24   
+   S2.BackgroundTransparency = 0.50 
+
+local S3 = Instance.new("TextButton") 
+S3.Parent = c3
+  S3.Text = "Summon"   
+   S3.Size = UDim2.new(0, 60, 0, 32)   
+   S3.Position = UDim2.new(0, -60, 0, 121)   
+   S3.BackgroundColor3 = Color3.new(0, 0, 0)   
+   S3.TextColor3 = Color3.new(1, 1, 1)   
+   S3.Font = Enum.Font.SourceSansBold   
+   S3.FontSize = Enum.FontSize.Size24   
+   S3.BackgroundTransparency = 0.50 
 
 local rt = Instance.new("TextButton") 
 rt.Parent = c1
@@ -261,7 +334,7 @@ we.Parent = c2
    we.Size = UDim2.new(0, 230, 0, 15)   
    we.Position = UDim2.new(0, 10, 0, 105) 
  we.BackgroundColor3 = Color3.new(139/255, 22/255, 22/255)
-   we.TextColor3 = Color3.new(1, 1, 1)   
+  we.TextColor3 = Color3.new(1, 1, 1)   
    we.Font = Enum.Font.SourceSansBold   
    we.FontSize = Enum.FontSize.Size24   
    we.BackgroundTransparency = 0.75
@@ -277,17 +350,74 @@ tw.Parent = c2
    tw.FontSize = Enum.FontSize.Size24   
    tw.BackgroundTransparency = 0.75
 
+local smm = Instance.new("TextButton") 
+smm.Parent = c3
+  smm.Text = "ASum[MonsMush]"   
+  smm.Size = UDim2.new(0, 230, 0, 15)   
+   smm.Position = UDim2.new(0, 10, 0, 5) 
+ smm.BackgroundColor3 = Color3.new(139/255, 22/255, 22/255)
+   smm.TextColor3 = Color3.new(1, 1, 1)   
+  smm.Font = Enum.Font.SourceSansBold   
+   smm.FontSize = Enum.FontSize.Size24   
+   smm.BackgroundTransparency = 0.75
+
+local skc = Instance.new("TextButton") 
+skc.Parent = c3
+  skc.Text = ASum[KingCroc]"   
+   skc.Size = UDim2.new(0, 230, 0, 15)   
+   skc.Position = UDim2.new(0, 10, 0, 30) 
+ skc.BackgroundColor3 = Color3.new(139/255, 22/255, 22/255)
+   skc.TextColor3 = Color3.new(1, 1, 1)   
+   skc.Font = Enum.Font.SourceSansBold   
+   skc.FontSize = Enum.FontSize.Size24   
+   skc.BackgroundTransparency = 0.75
+
+local asff = Instance.new("TextButton") 
+asff.Parent = c3
+  asff.Text = "ASum[FrozenFlower]"   
+   asff.Size = UDim2.new(0, 230, 0, 15)   
+   asff.Position = UDim2.new(0, 10, 0, 55) 
+ asff.BackgroundColor3 = Color3.new(139/255, 22/255, 22/255)
+   asff.TextColor3 = Color3.new(1, 1, 1)   
+   asff.Font = Enum.Font.SourceSansBold   
+  asff.FontSize = Enum.FontSize.Size24   
+   asff.BackgroundTransparency = 0.75
+
+local swe = Instance.new("TextButton") 
+swe.Parent = c3
+  swe.Text = "ASum[WorldEater]"   
+   swe.Size = UDim2.new(0, 230, 0, 15)   
+  swe.Position = UDim2.new(0, 10, 0, 80) 
+ swe.BackgroundColor3 = Color3.new(139/255, 22/255, 22/255)
+   swe.TextColor3 = Color3.new(1, 1, 1)   
+   swe.Font = Enum.Font.SourceSansBold   
+   swe.FontSize = Enum.FontSize.Size24   
+   swe.BackgroundTransparency = 0.75
+
+local stw = Instance.new("TextButton") 
+stw.Parent = c3
+  stw.Text = "ASum[TheWorm]"   
+   stw.Size = UDim2.new(0, 230, 0, 15)   
+   swt.Position = UDim2.new(0, 10, 0, 105) 
+ stw.BackgroundColor3 = Color3.new(139/255, 22/255, 22/255)
+  stw.TextColor3 = Color3.new(1, 1, 1)   
+   stw.Font = Enum.Font.SourceSansBold   
+   stw.FontSize = Enum.FontSize.Size24   
+   srw.BackgroundTransparency = 0.75
+
 --Visibility
 
 Tpm.Visible = true
 c1.Visible = false
 c2.Visible = false
+c3.Visible = false
 
 --Scripts
 
 local function opentpm()
 c1.Visible = true
 c2.Visible = false
+c3.Visible = false
 Tpm.Visible = false
 end
 
@@ -296,16 +426,50 @@ Tpm.MouseButton1Click:Connect(opentpm)
 local function openc1()
 c1.Visible = true
 c2.Visible = false
+c3.Visible = false
 end
 
 Z2.MouseButton1Click:Connect(openc1) 
 
+local function openc12()
+c1.Visible = true
+c2.Visible = false
+c3.Visible = false
+end
+
+Z3.MouseButton1Click:Connect(openc12) 
+
 local function openc2()
 c1.Visible = false
 c2.Visible = true
+c3.Visible = false
 end
 
 B.MouseButton1Click:Connect(openc2)
+
+local function openc22()
+c1.Visible = false
+c2.Visible = true
+c3.Visible = false
+end
+
+B3.MouseButton1Click:Connect(openc22)
+
+local function openc3() 
+c1.Visible = false
+c2.Visible = false
+c3.Visible = true
+end
+
+S.MouseButton1Click:Connect(openc3)
+
+local function openc32() 
+c1.Visible = false
+c2.Visible = false
+c3.Visible = true
+end
+
+S2.MouseButton1Click:Connect(openc32)
 
 local function exitc1() 
 c1.Visible = false
@@ -320,6 +484,13 @@ Tpm.Visible = true
 end
 
 Xb2.MouseButton1Click:Connect(exitc2)
+
+local function exitc3() 
+c3.Visible = false
+Tpm.Visible = true
+end
+
+Xb3.MouseButton1Click:Connect(exitc3)
 
 local function tprt() 
 x=-2367
