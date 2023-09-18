@@ -398,12 +398,12 @@ local stw = Instance.new("TextButton")
 stw.Parent = c3
   stw.Text = "ASum[TheWorm]"   
    stw.Size = UDim2.new(0, 230, 0, 15)   
-   swt.Position = UDim2.new(0, 10, 0, 105) 
+   stw.Position = UDim2.new(0, 10, 0, 105) 
  stw.BackgroundColor3 = Color3.new(139/255, 22/255, 22/255)
   stw.TextColor3 = Color3.new(1, 1, 1)   
    stw.Font = Enum.Font.SourceSansBold   
    stw.FontSize = Enum.FontSize.Size24   
-   srw.BackgroundTransparency = 0.75
+   stw.BackgroundTransparency = 0.75
 
 --Visibility
 
