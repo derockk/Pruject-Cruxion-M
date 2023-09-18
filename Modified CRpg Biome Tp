@@ -361,9 +361,20 @@ smm.Parent = c3
    smm.FontSize = Enum.FontSize.Size24   
    smm.BackgroundTransparency = 0.75
 
+local smmd = Instance.new("TextButton") 
+smmd.Parent = c3
+  smmd.Text = "Disable[MM]"   
+  smmd.Size = UDim2.new(0, 230, 0, 15)   
+   smmd.Position = UDim2.new(0, 10, 0, 5) 
+ smmd.BackgroundColor3 = Color3.new(139/255, 22/255, 22/255)
+   smmd.TextColor3 = Color3.new(1, 1, 1)   
+  smmd.Font = Enum.Font.SourceSansBold   
+   smmd.FontSize = Enum.FontSize.Size24   
+   smmd.BackgroundTransparency = 0.75
+
 local skc = Instance.new("TextButton") 
 skc.Parent = c3
-  skc.Text = ASum[KingCroc]"   
+  skc.Text = "ASum[KingCroc]"   
    skc.Size = UDim2.new(0, 230, 0, 15)   
    skc.Position = UDim2.new(0, 10, 0, 30) 
  skc.BackgroundColor3 = Color3.new(139/255, 22/255, 22/255)
@@ -371,6 +382,17 @@ skc.Parent = c3
    skc.Font = Enum.Font.SourceSansBold   
    skc.FontSize = Enum.FontSize.Size24   
    skc.BackgroundTransparency = 0.75
+
+local skcd = Instance.new("TextButton") 
+skcd.Parent = c3
+  skcd.Text = "Disable[KC]"   
+   skcd.Size = UDim2.new(0, 230, 0, 15)   
+   skcd.Position = UDim2.new(0, 10, 0, 30) 
+ skcd.BackgroundColor3 = Color3.new(139/255, 22/255, 22/255)
+   skcd.TextColor3 = Color3.new(1, 1, 1)   
+   skcd.Font = Enum.Font.SourceSansBold   
+   skcd.FontSize = Enum.FontSize.Size24   
+   skcd.BackgroundTransparency = 0.75
 
 local asff = Instance.new("TextButton") 
 asff.Parent = c3
@@ -383,6 +405,17 @@ asff.Parent = c3
   asff.FontSize = Enum.FontSize.Size24   
    asff.BackgroundTransparency = 0.75
 
+local asffd = Instance.new("TextButton") 
+asffd.Parent = c3
+  asffd.Text = "Disable[FF]"   
+   asffd.Size = UDim2.new(0, 230, 0, 15)   
+   asffd.Position = UDim2.new(0, 10, 0, 55) 
+ asffd.BackgroundColor3 = Color3.new(139/255, 22/255, 22/255)
+   asffd.TextColor3 = Color3.new(1, 1, 1)   
+   asffd.Font = Enum.Font.SourceSansBold   
+  asffd.FontSize = Enum.FontSize.Size24   
+   asffd.BackgroundTransparency = 0.75
+
 local swe = Instance.new("TextButton") 
 swe.Parent = c3
   swe.Text = "ASum[WorldEater]"   
@@ -393,6 +426,17 @@ swe.Parent = c3
    swe.Font = Enum.Font.SourceSansBold   
    swe.FontSize = Enum.FontSize.Size24   
    swe.BackgroundTransparency = 0.75
+
+local swed = Instance.new("TextButton") 
+swed.Parent = c3
+  swed.Text = "Disable[WE]"   
+   swed.Size = UDim2.new(0, 230, 0, 15)   
+  swed.Position = UDim2.new(0, 10, 0, 80) 
+ swed.BackgroundColor3 = Color3.new(139/255, 22/255, 22/255)
+   swed.TextColor3 = Color3.new(1, 1, 1)   
+   swed.Font = Enum.Font.SourceSansBold   
+   swed.FontSize = Enum.FontSize.Size24   
+   swed.BackgroundTransparency = 0.75
 
 local stw = Instance.new("TextButton") 
 stw.Parent = c3
@@ -405,12 +449,28 @@ stw.Parent = c3
    stw.FontSize = Enum.FontSize.Size24   
    stw.BackgroundTransparency = 0.75
 
+local stwd = Instance.new("TextButton") 
+stwd.Parent = c3
+  stwd.Text = "Disable[TW]"   
+   stwd.Size = UDim2.new(0, 230, 0, 15)   
+   stwd.Position = UDim2.new(0, 10, 0, 105) 
+ stwd.BackgroundColor3 = Color3.new(139/255, 22/255, 22/255)
+  stwd.TextColor3 = Color3.new(1, 1, 1)   
+   stwd.Font = Enum.Font.SourceSansBold   
+   stwd.FontSize = Enum.FontSize.Size24   
+   stwd.BackgroundTransparency = 0.75
+
 --Visibility
 
 Tpm.Visible = true
 c1.Visible = false
 c2.Visible = false
 c3.Visible = false
+smmd.Visible = false
+skcd.Visible = false
+asffd.Visible = false
+swed.Visible = false
+swtd.Visible = false
 
 --Scripts
 
@@ -641,3 +701,53 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
 end
 
 tw.MouseButton1Click:Connect(tptw)
+
+local function asummm()
+smmd.Visible = true
+smmd.Visible = false
+local AutoDrum = true
+while true do
+local args = {
+    [1] = "UseItem",
+    [2] = "Drum"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+wait(1)
+end
+end
+
+smm.MouseButton1Click:Connect(asummm)
+
+local function asummmd() 
+smmd.Visible = false
+smm.Visible = true
+local AutoDrum = false
+end
+
+smmd.MouseButton1Click:Connect(asummmd)
+
+local function asumkc() 
+skcd.Visible = true
+skc.Visible = false
+local AutoGuitar = true
+while true do
+local args = {
+    [1] = "UseItem",
+    [2] = "Guitar"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+wait(1)
+end
+end
+
+skc.MouseButton1Click:Connect(asumkc)
+
+local function asumkcd()
+skcd.Visible = false
+skc.Visible = true
+local AutoGuitar = false
+end
+
+skcd.MouseButton1Click:Connect(asumkcd)
