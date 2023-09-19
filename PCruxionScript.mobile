@@ -17,7 +17,7 @@ gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
  testNotif.Parent = notif 
   
 local testNotif2 = Instance.new("TextLabel")  
- testNotif2.Text = "Script Patched."  
+ testNotif2.Text = "i said nothing."  
  testNotif2.Size = UDim2.new(0, 100, 0, 30) 
  testNotif2.Position = UDim2.new(0, 250, 0, -31) 
  testNotif2.BackgroundColor3 = Color3.new(0, 0, 0) 
@@ -259,7 +259,7 @@ local prevpage = Instance.new("TextButton")
  menuText.Parent = menudesc
 
 local menuText = Instance.new("TextLabel") 
- menuText.Text = "Full of weak copy and pasted scripts 💀"  
+ menuText.Text = "Full of weakass copy and pasted scripts 💀"  
  menuText.Size = UDim2.new(0, 300, 0, 15) 
  menuText.Position = UDim2.new(0, 0, 0, 30) 
  menuText.BackgroundColor3 = Color3.new(0, 0, 0)  
@@ -506,7 +506,7 @@ local soundId = "rbxassetid://1053296915"
   end 
   
 local optionButton9 = Instance.new("TextButton")  
-  optionButton9.Text = "C Rpg Killaura"  
+  optionButton9.Text = "C Rpg Script"  
   optionButton9.Size = UDim2.new(0, 180, 0, 20)  
   optionButton9.Position = UDim2.new(0, 10, 0, 10)  
   optionButton9.BackgroundColor3 = Color3.new(139/255, 22/255, 22/255)
@@ -520,14 +520,7 @@ local optionButton9 = Instance.new("TextButton")
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/derockk/Pruject-Cruxion-M/main/Modified%20Classic%20Rpg%20Kill%20Aura"))()
 
-local function disablekilla()
-    disableka.Visible = false
-    enableka.Visible = true
-    killaura = false
-end
-
-enableka.MouseButton1Click:Connect(enablekilla)
-disableka.MouseButton1Click:Connect(disablekilla)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/derockk/Pruject-Cruxion-M/main/Modified%20CRpg%20Biome%20Tp"))()
        
  local soundId = "rbxassetid://1053296915"
     local sound = Instance.new("Sound")
@@ -541,7 +534,7 @@ disableka.MouseButton1Click:Connect(disablekilla)
   end 
 
 local optionButton10 = Instance.new("TextButton")  
-  optionButton10.Text = "CRpg Tp List"  
+  optionButton10.Text = "[Nothing]"  
   optionButton10.Size = UDim2.new(0, 180, 0, 20)  
   optionButton10.Position = UDim2.new(0, 10, 0, 40)  
   optionButton10.BackgroundColor3 = Color3.new(139/255, 22/255, 22/255)
@@ -552,9 +545,8 @@ local optionButton10 = Instance.new("TextButton")
   optionButton10.Parent = menuOptions2 
   
   local function enableScript10()  
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/derockk/Pruject-Cruxion-M/main/Modified%20CRpg%20Biome%20Tp"))()
-
- local soundId = "rbxassetid://1053296915"
+      
+ local soundId = "rbxassetid://5401838901"
     local sound = Instance.new("Sound")
     sound.SoundId = soundId
     sound.Parent = workspace
