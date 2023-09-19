@@ -704,7 +704,7 @@ tw.MouseButton1Click:Connect(tptw)
 
 local function asummm()
 smmd.Visible = true
-smmd.Visible = false
+smm.Visible = false
 local AutoDrum = true
 while true do
 local args = {
@@ -751,3 +751,78 @@ local AutoGuitar = false
 end
 
 skcd.MouseButton1Click:Connect(asumkcd)
+
+local function asumff()
+asff.Visible = false
+asffd.Visible = true
+local AutoBox = true
+while true do
+local args = {
+    [1] = "UseItem",
+    [2] = "Musical Box"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+wait(1)
+end
+end
+
+asff.MouseButton1Click:Connect(asumff)
+
+local function asumffd()
+asff.Visible = true
+asffd.Visible = false
+local AutoBox = false
+end
+
+asffd.MouseButton1Click:Connect(asumffd)
+
+local function asumwe()
+swed.Visible = true
+swe.Visible = false
+local AutoFlute = true
+while true do
+local args = {
+    [1] = "UseItem",
+    [2] = "Flute"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+wait(1)
+end
+end
+
+swe.MouseButton1Click:Connect(asumwe)
+
+local function asumwed()
+swed.Visible = false
+swe.Visible = true
+local AutoFlute = false
+end
+
+swed.MouseButton1Click:Connect(asumwed)
+
+local function asumtw()
+stwd.Visible = true
+stw.Visible = false
+local AutoWhistle = true
+while true do
+local args = {
+    [1] = "UseItem",
+    [2] = "Whistle"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+wait(1)
+end
+end
+
+stw.MouseButton1Click:Connect(asumtw)
+
+local function asumtwd()
+stwd.Visible = false
+stw.Visible = true
+local AutoWhistle = false
+end
+
+stwd.MouseButton1Click:Connect(asumtwd)
