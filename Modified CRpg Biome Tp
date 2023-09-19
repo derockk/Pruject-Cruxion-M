@@ -722,7 +722,7 @@ smm.MouseButton1Click:Connect(asummm)
 local function asummmd() 
 smmd.Visible = false
 smm.Visible = true
-local AutoDrum = false
+AutoDrum = false
 end
 
 smmd.MouseButton1Click:Connect(asummmd)
@@ -747,7 +747,7 @@ skc.MouseButton1Click:Connect(asumkc)
 local function asumkcd()
 skcd.Visible = false
 skc.Visible = true
-local AutoGuitar = false
+AutoGuitar = false
 end
 
 skcd.MouseButton1Click:Connect(asumkcd)
@@ -772,7 +772,7 @@ asff.MouseButton1Click:Connect(asumff)
 local function asumffd()
 asff.Visible = true
 asffd.Visible = false
-local AutoBox = false
+AutoBox = false
 end
 
 asffd.MouseButton1Click:Connect(asumffd)
@@ -797,7 +797,7 @@ swe.MouseButton1Click:Connect(asumwe)
 local function asumwed()
 swed.Visible = false
 swe.Visible = true
-local AutoFlute = false
+AutoFlute = false
 end
 
 swed.MouseButton1Click:Connect(asumwed)
@@ -822,7 +822,7 @@ stw.MouseButton1Click:Connect(asumtw)
 local function asumtwd()
 stwd.Visible = false
 stw.Visible = true
-local AutoWhistle = false
+AutoWhistle = false
 end
 
 stwd.MouseButton1Click:Connect(asumtwd)
