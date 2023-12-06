@@ -33,8 +33,8 @@ logoName.BackgroundColor3 = Color3.new(0, 0, 0)
 logoName.BackgroundTransparency = 1
 logoName.Parent = windowFrame
 
-local enterButton = Instance.new("TextButton") 
-enterButton.Text = "Enter" 
+local enterButton = Instance.new("TextLabel") 
+enterButton.Text = "Access Denied" 
 enterButton.Size = UDim2.new(0, 380, 0, 40)
 enterButton.Position = UDim2.new(0, 10, 0, 100)
 enterButton.BackgroundColor3 = Color3.new(139/255, 22/255, 22/255)
@@ -44,7 +44,6 @@ enterButton.FontSize = Enum.FontSize.Size24
 enterButton.BackgroundTransparency = 0.75
 enterButton.Parent = windowFrame
 
-local function activateScript() loadstring(game:HttpGet("https://raw.githubusercontent.com/derockk/Pruject-Cruxion-M/main/PCruxionScript.mobile"))()
 
  local soundId = "rbxassetid://8490606735"
     local sound = Instance.new("Sound")
@@ -52,10 +51,6 @@ local function activateScript() loadstring(game:HttpGet("https://raw.githubuserc
     sound.Parent = workspace
     sound:Play()
 
-        enterButton:Destroy()
-        logoName:Destroy()
-windowFrame:Destroy() 
-intext1:Destroy() 
-end
+       
 
 enterButton.MouseButton1Click:Connect(activateScript)
